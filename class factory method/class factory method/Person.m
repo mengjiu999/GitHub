@@ -23,10 +23,17 @@
 //    Person *p = [Person alloc];
 //    Person *p1 = [Person init];
 //    return p1;
-    return [[Person alloc]init];
+//    return [[Person alloc]init];
+/*
+注意：以后但凡定义类工厂方法，在类工厂方法中一定不要使用类名来创建
+ 一定要用self来创建
+ self在类工厂中就代表类对象，谁调用这个方法self就表示谁
+ */
+    return [[self alloc]init];
 }
 +(instancetype)personwithAge :(int)age{
-    Person *p =[[Person alloc]init];
+//    Person *p =[[Person alloc]init];
+    Person *p =[[self alloc]init];
     p.age = age;
     return p;
 }

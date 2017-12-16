@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		187DF5B61FE4D06F00ADDAEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DF5B51FE4D06F00ADDAEE /* main.m */; };
 		187DF5BE1FE4D08E00ADDAEE /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DF5BD1FE4D08E00ADDAEE /* Person.m */; };
+		187DF5C11FE4E01600ADDAEE /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DF5C01FE4E01600ADDAEE /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		187DF5B51FE4D06F00ADDAEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		187DF5BC1FE4D08E00ADDAEE /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		187DF5BD1FE4D08E00ADDAEE /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		187DF5BF1FE4E01600ADDAEE /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		187DF5C01FE4E01600ADDAEE /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				187DF5B51FE4D06F00ADDAEE /* main.m */,
 				187DF5BC1FE4D08E00ADDAEE /* Person.h */,
 				187DF5BD1FE4D08E00ADDAEE /* Person.m */,
+				187DF5BF1FE4E01600ADDAEE /* Student.h */,
+				187DF5C01FE4E01600ADDAEE /* Student.m */,
 			);
 			path = "class factory method";
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			files = (
 				187DF5BE1FE4D08E00ADDAEE /* Person.m in Sources */,
 				187DF5B61FE4D06F00ADDAEE /* main.m in Sources */,
+				187DF5C11FE4E01600ADDAEE /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

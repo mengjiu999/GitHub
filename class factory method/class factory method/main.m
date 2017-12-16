@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Person.h"
+#import "Student.h"
 int main(int argc, const char * argv[]) {
 //    Person *p = [[Person alloc]init];
 //    Person *p1 = [Person person];
@@ -23,6 +24,11 @@ int main(int argc, const char * argv[]) {
 //    [[NSString alloc]initWithString:];
 //    
 //    [NSString stringWithUString:<#(nonnull const char *)#>];
-    
+    Student *stu = [Student person];
+    stu.no = 111;
+    NSLog(@"no = %i",stu.no);
+    Student *stu1 = [Student personwithAge:1];
+    stu1.no = 122;
+     NSLog(@"no = %i",stu1.no);
     return 0;
 }
