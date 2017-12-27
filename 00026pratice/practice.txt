@@ -1,0 +1,138 @@
+1. OC中布尔(BOOL)类型的变量的值只有（）  分值:5
+您的回答为：1/0 错误
+正确答案为：YES/NO
+2. 在OC中，类的定义包括两部分(声明与实现)，其中实现部分是()  分值:5
+您的回答为：@implementation 正确  （得分：5）
+3. 使用 Objective-C 语言输出“This is a Objective-Cprogram.”正确的是（）  分值:5
+您的回答为：D、NSLog(@"This is a Objective-Cprogram."); 正确  （得分：5）
+4. Objective-C的代码文件的后缀为（）  分值:5
+您的回答为：B、.m 正确  （得分：5）
+5. 面向对象的特性不包括（）  分值:5
+您的回答为：D、构造 正确  （得分：5）
+6. Objective-C中包含一个自定义的头文件应该使用（）  分值:5
+您的回答为：C、#import "" 正确  （得分：5）
+7. 下列哪个选项与@synthesize配合使用（）  分值:5
+您的回答为：D、@property 正确  （得分：5）
+8. 关于类和对象的概念，下列属于对象的是（）  分值:5
+您的回答为：C、世界冠军杨威 正确  （得分：5）
+9. NSArray *array = [NSArray arrayWithObjects:@"one", @"two", @"three",nil];
+NSLog(@"%@",[array objectAtIndex:1]);
+NSLog(@"%@",[array objectAtIndex:3]);
+控制台中打印的最后一条信息会是()
+  分值:5
+您的回答为：D、崩溃信息 正确  （得分：5）
+10. 现有如下集合，能准确删除“赵四”的代码是（）
+NSMutableDictionary* peoples=[NSMutableDictionary dictionaryWithObjectsAndKeys:@"赵四",@"左护法",@"李四",@"右使",@"唐sir",@"黑老大", nil];
+  分值:5
+您的回答为：B、[peoples removeObject:@"赵四"]; 错误
+正确答案为：A、[peoples removeObjectForKey:@"左护法"];
+11. 在OC中，类中成员变量的可见度(访问权限)不包括（）  分值:5
+您的回答为：D、@optional 正确  （得分：5）
+12. 对于Objective-C中的方括号“[]”的作用,下列说法错误的是（）  分值:5
+您的回答为：A、用于通知某个对象该做什么 错误
+正确答案为：D、方括号中可以为空
+13. 必须实现的协议方法使用（）关键字声明  分值:5
+您的回答为：D、@protocol 错误
+正确答案为：C、@required
+14. 下面关于类概念的描述中,错误的是（）  分值:5
+您的回答为：D、类就是C语言中的结构体类型 正确  （得分：5）
+15. 名为print::的方法有几个传入参数（）  分值:5
+您的回答为：C、2 正确  （得分：5）
+16. 向Xcode控制台输出一个字符串应该用（）  分值:5
+您的回答为：A、NSLog() 正确  （得分：5）
+17. 下面哪个选项是类（）  分值:5
+您的回答为：A、演员 正确  （得分：5）
+18. Objective-C 语言中类的实例变量如果只可以被本类和其子类访问，需要下列哪个修饰符（）  分值:5
+您的回答为：C、@protected 正确  （得分：5）
+19. 协议与委托的描述不正确的是（）  分值:5
+您的回答为：A、委托是iOS的一种设计模式 错误
+正确答案为：C、类接受了多个协议，这些协议写在父类后面的<>内，多个协议之间用“、”隔开
+20. 关于KVC的描述正确的是（）  分值:5
+您的回答为：D、当对象的属性值改变时，我们能收到一个通知。 错误
+正确答案为：B、是一种间接访问对象的属性的机制。
+21. 关于KVC的描述正确的是（）  分值:5
+您的回答为：C、只能访问对象的属性。 错误
+正确答案为：A、KVC是指“键-值-编码”。
+22. 下面程序段的输出结果是什么（）
+NSMutableDictionary* dic = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"1",@"2",@"2",@"3",@"3",@"4",nil];
+[dic removeObjectForKey:@"3"];
+NSLog(@"%@",dic);  分值:5
+您的回答为：2=1 4=3 正确  （得分：5）
+23. 关于协议描述不正确的是（）  分值:5
+您的回答为：D、协议中声明的方法，默认是@optional的。 正确  （得分：5）
+24. 在OC中扩展类的方法的形式不包括（）  分值:5
+您的回答为：C、分类 错误
+正确答案为：B、多态
+25. 现有Person类声明和Person的子类Student，代码如下：
+@interface Person : NSObject
+-(void)walk;
+@end
+@implementationPerson
+-(void)walk
+{
+    NSLog(@"Personis walking…");
+}
+@end
+@interfaceStudent : Person
+-(void)studentWalk;
+@end
+@implementationStudent
+-(void)studentWalk
+{
+    (1)
+}
+@end
+在下列选项中，哪些代码可以填在（1）处实现调用Person类中walk方法，并输出“Person is walking...”（）
+
+  分值:5
+您的回答为：C、[self walk]; 正确  （得分：5）
+26. 有一个类Student,要求实现:定义一个实例初始化方法,初始化方法需要传入名字和性别（）  分值:5
+您的回答为：B、 正确  （得分：5）
+27. 下列哪个选项不能作为property的可选属性（）  分值:5
+您的回答为：C、atomic 错误
+正确答案为：A、alloc
+28. 实例变量默认的访问修饰符是（）  分值:5
+您的回答为：C、@protected 正确  （得分：5）
+29. 下面哪个选项是正确的（）  分值:5
+您的回答为：B、用类目可以扩展一个类，可以直接用该类或该类的实例对象，去调用该类目扩展的方法 正确  （得分：5）
+30. NSString 和 NSMutableString的关系和区别描述不正确的是（）  分值:5
+您的回答为：D、NSString和NSMutableString没有任何关系。 正确  （得分：5）
+31. 以下说法正确的是（）  分值:5
+您的回答为：C、协议中定义的方法默认是必须实现的 正确  （得分：5）
+32. 声明一个返回值为NSArray，并且带两个字符串对象的Block类型变量（）  分值:5
+您的回答为：C、NSArray (^aBlock)(NSString *str,NSString *str2) 错误
+正确答案为：D、NSArray *(^aBlock)(NSString *str,NSString *str2
+33. 自定义一个Person类，下面哪个选项是规范的便利构造器声明方式（）  分值:5
+您的回答为：D、+(id)personWithName:(NSString*)theName; 正确  （得分：5）
+34. 下列选项中不能正常为emp的name属性赋值的代码有（）  分值:5
+您的回答为：C、[emp setValue:@"柳传志" forKey:@"name"]; 错误
+正确答案为：B、emp->name=@"周杰伦";
+35. 对于下面代码说法正确的是：
+@property (copy,nonatomic,readonly) NSString * calValue；  分值:5
+您的回答为：B、此属性可保证多线程安全。 错误
+正确答案为：D、此属性只能读取，不能赋值。
+36. 注释可以出现在程序的任何位置。  分值:5
+您的回答为：对 正确  （得分：5）
+37. 实例对象都是通过调用类方法生成的。  分值:5
+您的回答为：错 错误
+正确答案为：对
+38. 协议中定义的方法默认是必须实现的。  分值:5
+您的回答为：对 正确  （得分：5）
+39. 若当前类别中的方法与父类方法名称相同时，当前类别具有更高的优先级。  分值:5
+您的回答为：对 正确  （得分：5）
+40. 为了保证程序不产生额外的内存开销，当对象不再被需要以后，应当被立即销毁。  分值:5
+您的回答为：对 正确  （得分：5）
+41. 在类方法中可以使用实例变量。  分值:5
+您的回答为：对 错误
+正确答案为：错
+42. 在动态(实例)方法中,self是指调用当前方法的那个对象。  分值:5
+您的回答为：对 正确  （得分：5）
+43. 可以在重写当前类的构造方法时通过self关键字访问当前类中的成员属性。  分值:5
+您的回答为：对 错误
+正确答案为：错
+44. @class指令可以代替#import指令引用一个类并访问其成员变量和方法。  分值:5
+您的回答为：错 正确  （得分：5）
+45. 在使用@property定义NSString类型的成员变量的时候最好使用copy作为标识符。  分值:5
+您的回答为：错 错误
+正确答案为：对
+保存报告
