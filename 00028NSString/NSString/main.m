@@ -16,7 +16,8 @@ int main(int argc, const char * argv[]) {
     NSString *path = @"";
     NSURL *url1 = [NSURL fileURLWithPath:<#(nonnull NSString *)#>];
     //通过这种方法创建URL,那么系统会自动给我们传入的字符串添加协议头，所以字符串中不需要写file://
-    //注意：开发中一般情况下，如果是访问本机资源的时候，
+    //注意：开发中一般情况下，如果是访问本机资源的时候，创建URL，建议使用fileURLWithPath方法创建
+    //因为url不支持中文，如果URL中包括中文，那么无法访问，但是如果是通过fileURLWithPath方法创建url，哪怕URL中包含中文也可以访问，系统内部会自动对url中包含的中文进行处理
     NSURL *url = [NSURL URLWithString:path];
 //2.根据URL加载文件中的字符串
     NSString *str = [NSString stringWithContentsOfFile:<#(nonnull NSString *)#> encoding:<#(NSStringEncoding)#> error:<#(NSError * _Nullable __autoreleasing * _Nullable)#>];
