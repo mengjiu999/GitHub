@@ -19,6 +19,9 @@ int main(int argc, const char * argv[]) {
     //注意：开发中一般情况下，如果是访问本机资源的时候，创建URL，建议使用fileURLWithPath方法创建
     //因为url不支持中文，如果URL中包括中文，那么无法访问，但是如果是通过fileURLWithPath方法创建url，哪怕URL中包含中文也可以访问，系统内部会自动对url中包含的中文进行处理
     NSURL *url = [NSURL URLWithString:path];
+    //如果URL包含中文，又非不通过fileURLWithPath创建，也可以破
+    //如果想破就必须在创建URL之前先对字符串中的中文进行处理，进行百分号编码
+    path = [path stringByAddingPercentEncodingWithAllowedCharacters:<#(nonnull NSCharacterSet *)#>];
 //2.根据URL加载文件中的字符串
     NSString *str = [NSString stringWithContentsOfFile:<#(nonnull NSString *)#> encoding:<#(NSStringEncoding)#> error:<#(NSError * _Nullable __autoreleasing * _Nullable)#>];
     
