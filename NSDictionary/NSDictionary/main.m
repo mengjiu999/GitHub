@@ -16,5 +16,9 @@ int main(int argc, const char * argv[]) {
     NSLog(@"name = %@",name);
  */
 //注意key和value是一一对应的
+/*
+    NSDictionary *dict = [NSDictionary dictionaryWithObjects:@[@"zhk",@"176"] forKeys:@[@"name",@"height"]];
+    NSLog(@"%@,%@",[dict objectForKey:@"name"],[dict objectForKey:@"height"]);
+ */
     
 }
