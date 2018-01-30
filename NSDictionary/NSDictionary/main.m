@@ -20,5 +20,7 @@ int main(int argc, const char * argv[]) {
     NSDictionary *dict = [NSDictionary dictionaryWithObjects:@[@"zhk",@"176"] forKeys:@[@"name",@"height"]];
     NSLog(@"%@,%@",[dict objectForKey:@"name"],[dict objectForKey:@"height"]);
  */
+//    NSDictionary *dict = {@"name":@"value"};
+//    NSDictionary *dict = @{@"name":@"zhk"};
     
 }
