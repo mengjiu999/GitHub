@@ -24,6 +24,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(IBAction)redBtnClick
+{
+    NSLog(@"%s",__func__);
+}
+-(IBAction)greenBtnClick
+{
+    NSLog(@"%s",__func__);
+}
+-(IBAction)blueBtnClick
+{
+    NSLog(@"%s",__func__);
+}
 
 @end

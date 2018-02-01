@@ -21,16 +21,25 @@
                                 <rect key="frame" x="149" y="265" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="绿色"/>
+                                <connections>
+                                    <action selector="greenBtnClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="1cD-PK-3R8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEX-cs-euf">
                                 <rect key="frame" x="38" y="265" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="红色"/>
+                                <connections>
+                                    <action selector="redBtnClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="2O7-CH-Bew"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ec-Fl-ysc">
                                 <rect key="frame" x="255" y="265" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="蓝色"/>
+                                <connections>
+                                    <action selector="blueBtnClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fzk-Qb-X4B"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="这是一段文字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejD-Lz-NrW">
                                 <rect key="frame" x="132" y="140" width="110" height="21"/>
