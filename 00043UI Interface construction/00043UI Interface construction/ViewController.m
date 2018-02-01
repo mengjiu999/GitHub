@@ -34,15 +34,15 @@
  */
 -(IBAction)redBtnClick
 {
-    NSLog(@"%s",__func__);
+    self.mylable.textColor = [UIColor redColor];
 }
 -(IBAction)greenBtnClick
 {
-    NSLog(@"%s",__func__);
+   self.mylable.textColor = [UIColor greenColor];
 }
 -(IBAction)blueBtnClick
 {
-    NSLog(@"%s",__func__);
+   self.mylable.textColor = [UIColor blueColor];
 }
 
 @end
