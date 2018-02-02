@@ -32,8 +32,12 @@
     [self.view addSubview:btn];
     self.btn = btn;
     
-    -(IBAction)btnclick{
-        
+- (IBAction)btnClick{
+    //oc语法：对象的结构体属性是不允许直接修改内部的变量
+    //self.btn.frame.origin.x = 20;
+    CGRect frame = self.btn.frame;
+    frame.origin.x = 20;
+    self.frame = frame;
     }
     
 }
