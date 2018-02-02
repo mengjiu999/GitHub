@@ -21,7 +21,7 @@
     [super viewDidLoad];
     //取出btn父控件
     NSLog(@"btn.superview:%@",self.btn.superview);
-
+    NSLog(@"blueView:%@",self.blueView);
 }
 
 //当系统收到内存警告时会调用该方法，告知内存出现了警告
