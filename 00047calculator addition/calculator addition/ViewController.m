@@ -35,17 +35,14 @@
     //1.获得第一个输入框的数字
     NSString *num1 = self.num1.text;
     if(num1.length == 0 ){
-        
-        NSLog(@"输入框不能为空");
-        
+        [self showError:@"第一个输入框不能为空"];
         return;
     }
     //2.获得第二个输入框的数字
     NSString *num2 =self.num2.text;
     if(num2.length == 0){
-        
-        NSLog(@"输入框不能为空");
-        
+        [self showError:@"第二个输入框不能为空"];
+       
         return;
     }
     //3.计算结果
@@ -58,7 +55,10 @@
     //4将字符显示在label上
     self.result.text = [NSString stringWithFormat:@"%ld",result];
 }
-
+//弹窗
+-(void)showError:(NSString *)error{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: @"输入有误" message:error delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+}
 
 @end
 
