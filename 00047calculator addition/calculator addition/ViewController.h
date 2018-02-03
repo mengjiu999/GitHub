@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  Addition interface
+//  calculator addition
 //
-//  Created by apple on 2018/2/2.
+//  Created by apple on 2018/2/3.
 //  Copyright © 2018年 YuNuo. All rights reserved.
 //
 

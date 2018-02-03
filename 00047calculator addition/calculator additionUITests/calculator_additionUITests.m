@@ -1,18 +1,18 @@
 //
-//  Addition_interfaceUITests.m
-//  Addition interfaceUITests
+//  calculator_additionUITests.m
+//  calculator additionUITests
 //
-//  Created by apple on 2018/2/2.
+//  Created by apple on 2018/2/3.
 //  Copyright © 2018年 YuNuo. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface Addition_interfaceUITests : XCTestCase
+@interface calculator_additionUITests : XCTestCase
 
 @end
 
-@implementation Addition_interfaceUITests
+@implementation calculator_additionUITests
 
 - (void)setUp {
     [super setUp];
