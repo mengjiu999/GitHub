@@ -41,6 +41,19 @@
 #pragma mark 小招
 
 - (IBAction)xiaoZhao{
+        //1.加载图片资源
+        NSMutableArray *xiaoZhaoImages = [NSMutableArray array];
+        for(int i = 0 ; i < 10 ; i++){
+            NSString *imageName = [NSString stringWithFormat:@"xiaoZha3_%d",i + 1];
+            UIImage *image = [UIImage imageNamed:imageName];
+            [xiaoZhaoImages addObject:image];
+        }
+        
+        //2.设置动画的图片
+        self.imageView.animationImages = xiaoZhaoImages;
+        
+        //3.开始动画
+        [self.imageView startAnimating];
 }
 #pragma mark 大招
 
