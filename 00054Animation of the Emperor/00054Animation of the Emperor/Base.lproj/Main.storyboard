@@ -50,9 +50,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="imageView" destination="UUb-AQ-dz4" id="bsQ-h5-H3s"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="UUb-AQ-dz4" id="TJZ-VD-CcB"/>
+                        <outlet property="imageView" destination="UUb-AQ-dz4" id="RFL-n2-pKx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

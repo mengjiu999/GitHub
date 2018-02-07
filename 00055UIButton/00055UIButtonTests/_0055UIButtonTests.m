@@ -1,18 +1,18 @@
 //
-//  UITests.m
-//  UITests
+//  _0055UIButtonTests.m
+//  00055UIButtonTests
 //
-//  Created by apple on 2018/2/6.
+//  Created by apple on 2018/2/7.
 //  Copyright © 2018年 YuNuo. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface UITests : XCTestCase
+@interface _0055UIButtonTests : XCTestCase
 
 @end
 
-@implementation UITests
+@implementation _0055UIButtonTests
 
 - (void)setUp {
     [super setUp];
