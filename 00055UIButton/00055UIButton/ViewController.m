@@ -46,9 +46,12 @@
     
     //添加到控制器
     [self.view addSubview:btn];
+    
+    //监听
+    
+    [btn addTarget:<#(nullable id)#> action:<#(nonnull SEL)#> forControlEvents:<#(UIControlEvents)#>];
 }
 
-    //监听点击
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
