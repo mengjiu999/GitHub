@@ -48,6 +48,7 @@
     [self.view addSubview:btn];
 }
 
+    //监听点击
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
