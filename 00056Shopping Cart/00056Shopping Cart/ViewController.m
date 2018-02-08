@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+//购物车
 @property (weak, nonatomic) IBOutlet UIView *shoppingCartView;
 
 @end
@@ -27,6 +28,20 @@
 #pragma mark 添加商品
 
 - (IBAction)addProduct:(UIButton *)sender {
+    //常量
+    CGFloat width = 70;
+    CGFloat height = 100;
+    
+    //创建商品的view
+    UIView *productView = [[UIView alloc] init];
+    productView.backgroundColor = [UIColor yellowColor];
+    
+    //设置frame
+    productView.frame = CGRectMake(0, 0, width, height);
+    
+    
+    //添加到购物车
+    [self.shoppingCartView addSubview:productView];
 }
 
 #pragma mark 移除商品

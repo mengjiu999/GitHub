@@ -24,7 +24,7 @@
                                 <state key="disabled" image="remove_disabled"/>
                                 <state key="highlighted" image="remove_highlighted"/>
                                 <connections>
-                                    <action selector="removeProduct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AdQ-Cc-T0d"/>
+                                    <action selector="removeProduct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yaP-ga-aet"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iag-RC-zG7">
@@ -39,7 +39,7 @@
                                 <state key="disabled" image="add_disabled"/>
                                 <state key="highlighted" image="add_highlighted"/>
                                 <connections>
-                                    <action selector="addProduct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xX4-Gy-GO2"/>
+                                    <action selector="addProduct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9C2-l6-t0G"/>
                                 </connections>
                             </button>
                         </subviews>
