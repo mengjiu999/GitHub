@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIView *shoppingCartView;
 
 @end
 
@@ -16,14 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+#pragma mark-添加和移除商品
+#pragma mark 添加商品
+
+- (IBAction)addProduct:(UIButton *)sender {
 }
 
+#pragma mark 移除商品
+- (IBAction)removeProduct:(UIButton *)sender {
+}
 
 @end
