@@ -47,11 +47,19 @@
     //添加到控制器
     [self.view addSubview:btn];
     
-    //监听
-    
-    [btn addTarget:<#(nullable id)#> action:<#(nonnull SEL)#> forControlEvents:<#(UIControlEvents)#>];
+    //代码创建的按钮，监听点击
+    // addTarget:目标 谁想做事情
+    //action:要执行的方法
+    //SEL *sel = ;
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+}
+-(void)demo{
+    NSLog(@"%s ",__func__);
 }
 
+- (IBAction)btnClick:(UIButton *)sender {
+    sender.enabled = NO;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
