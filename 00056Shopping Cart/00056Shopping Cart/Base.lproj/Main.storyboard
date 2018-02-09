@@ -47,6 +47,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="addProductbtn" destination="NaX-DI-HVr" id="7Ko-jr-wHo"/>
                         <outlet property="removeProductbtn" destination="sQi-ds-DY6" id="bM4-7i-eG0"/>
                         <outlet property="shoppingCartView" destination="Iag-RC-zG7" id="BdQ-Jx-SCR"/>
                     </connections>
