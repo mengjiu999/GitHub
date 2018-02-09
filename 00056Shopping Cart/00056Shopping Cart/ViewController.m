@@ -21,13 +21,27 @@
 //添加商品的引用
 @property (weak, nonatomic) IBOutlet UIButton *addProductbtn;
 
+//商品的数据
+@property (nonatomic, strong) NSArray *products;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   // self.index = 0;
+    
+   //加载数据（不能这么写）
+    /*
+    self.products = @[
+                      @{@"icon" : @"liantiaobao",@"title" : @"链条包"},
+                      @{@"icon" : @"shoutibao",@"title" : @"手提包"},
+                      @{@"icon" : @"danjianbao",@"title" : @"单肩包"},
+                      @{@"icon" : @"shuangjianbao",@"title" : @"双肩包"},
+                      @{@"icon" : @"xiekuabao",@"title" : @"斜挎包"},
+                      @{@"icon" : @"qianbao",@"title" : @"钱包"},
+                      ];
+     */
 }
 
 
@@ -77,6 +91,17 @@
     [productView addSubview:titleLabel];
     
     //2.6 设置展示数据
+    if(self.products == nil){
+        self.products = @[
+                          @{@"icon" : @"liantiaobao",@"title" : @"链条包"},
+                          @{@"icon" : @"shoutibao",@"title" : @"手提包"},
+                          @{@"icon" : @"danjianbao",@"title" : @"单肩包"},
+                          @{@"icon" : @"shuangjianbao",@"title" : @"双肩包"},
+                          @{@"icon" : @"xiekuabao",@"title" : @"斜挎包"},
+                          @{@"icon" : @"qianbao",@"title" : @"钱包"},
+                          ];
+    }
+  
     //2.6.1.所有的数据都一样（不可取）
     /*
     iconView.image = [UIImage imageNamed:@"danjianbao"];
@@ -109,15 +134,7 @@
      */
     
     //2.6.4.将数据放入数组中，但是每一个数据都是一个字典，每一个字典都是一个商品
-    NSArray *products = @[
-                          @{@"icon" : @"liantiaobao",@"title" : @"链条包"},
-                          @{@"icon" : @"shoutibao",@"title" : @"手提包"},
-                          @{@"icon" : @"danjianbao",@"title" : @"单肩包"},
-                          @{@"icon" : @"shuangjianbao",@"title" : @"双肩包"},
-                          @{@"icon" : @"xiekuabao",@"title" : @"斜挎包"}, 
-                          @{@"icon" : @"qianbao",@"title" : @"钱包"},
-                          ];
-    NSDictionary *productdic = products[index];
+    NSDictionary *productdic = self.  products[index];
     iconView.image = [UIImage imageNamed:productdic[@"icon"]];
     titleLabel.text = productdic[@"title"];
     
