@@ -91,6 +91,7 @@
     [productView addSubview:titleLabel];
     
     //2.6 设置展示数据
+    /*
     if(self.products == nil){
         self.products = @[
                           @{@"icon" : @"liantiaobao",@"title" : @"链条包"},
@@ -101,6 +102,7 @@
                           @{@"icon" : @"qianbao",@"title" : @"钱包"},
                           ];
     }
+   */
   
     //2.6.1.所有的数据都一样（不可取）
     /*
@@ -167,6 +169,27 @@
     //2.2令添加商品按钮可用
     self.addProductbtn.enabled = YES;
     
+#pragma mark - 懒加载
+/*
+ 懒加载的方法：
+ 1.定义成员变量
+ 2.重写get方法
+ 3.在get方法中判断，变量是否有值，直接返回，如果没有值，则加载数据
+ */
+-(NSArray *)products
+{
+    if(_products == nil){
+        _products =  = @[
+                         @{@"icon" : @"liantiaobao",@"title" : @"链条包"},
+                         @{@"icon" : @"shoutibao",@"title" : @"手提包"},
+                         @{@"icon" : @"danjianbao",@"title" : @"单肩包"},
+                         @{@"icon" : @"shuangjianbao",@"title" : @"双肩包"},
+                         @{@"icon" : @"xiekuabao",@"title" : @"斜挎包"},
+                         @{@"icon" : @"qianbao",@"title" : @"钱包"},
+                         ];
+    }
+    return _products;
 }
+-(void)
 
 @end
