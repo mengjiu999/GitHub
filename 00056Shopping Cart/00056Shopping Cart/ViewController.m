@@ -109,7 +109,17 @@
      */
     
     //2.6.4.将数据放入数组中，但是每一个数据都是一个字典，每一个字典都是一个商品
-    
+    NSArray *products = @[
+                          @{@"icon" : @"liantiaobao",@"title" : @"链条包"},
+                          @{@"icon" : @"shoutibao",@"title" : @"手提包"},
+                          @{@"icon" : @"danjianbao",@"title" : @"单肩包"},
+                          @{@"icon" : @"shuangjianbao",@"title" : @"双肩包"},
+                          @{@"icon" : @"xiekuabao",@"title" : @"斜挎包"}, 
+                          @{@"icon" : @"qianbao",@"title" : @"钱包"},
+                          ];
+    NSDictionary *productdic = products[index];
+    iconView.image = [UIImage imageNamed:productdic[@"icon"]];
+    titleLabel.text = productdic[@"title"];
     
     /***************************3.判断按钮状态****************************/
     /*
