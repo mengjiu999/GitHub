@@ -54,7 +54,7 @@
     /***************************2.添加商品****************************/
     //2.1添加商品的view
     UIView *productView = [[UIView alloc] init];
-    productView.backgroundColor = [UIColor yellowColor];
+    //productView.backgroundColor = [UIColor yellowColor];
     
     //2.2设置frame
     productView.frame = CGRectMake(x, y, width, height);
@@ -66,17 +66,52 @@
     //2.4添加UIimageView对象用于显示商品的图片
     UIImageView *iconView = [[UIImageView alloc] init];
     iconView.frame = CGRectMake(0, 0, width, width);
-    iconView.backgroundColor = [UIColor yellowColor];
+    //iconView.backgroundColor = [UIColor yellowColor];
     [productView addSubview:iconView];
     
     ///2.5添加UILabel对象用于显示商品的名称
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.frame = CGRectMake(0, width, width, height - width);
-    titleLabel.backgroundColor = [UIColor blackColor];
+    //titleLabel.backgroundColor = [UIColor blue Color];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
     [productView addSubview:titleLabel];
     
+    //2.6 设置展示数据
+    //2.6.1.所有的数据都一样（不可取）
+    /*
+    iconView.image = [UIImage imageNamed:@"danjianbao"];
+    titleLabel.text = @"单肩包";
+     */
     
-   /***************************3.判断按钮状态****************************/
+    //2.6.2.判断下标值，根据不同的下标值，设置不同的数据(不可取)
+    /*
+    if(index == 0){
+        iconView.image = [UIImage imageNamed:@"xiekuabao"];
+        titleLabel.text = @"斜挎包";
+    }else if(index == 1){
+        iconView.image = [UIImage imageNamed:@"xiekuabao"];
+        titleLabel.text = @"斜挎包";
+    }else if(index == 2){
+        iconView.image = [UIImage imageNamed:@"xiekuabao"];
+        titleLabel.text = @"斜挎包";
+    }else if(index == 3){
+        iconView.image = [UIImage imageNamed:@"xiekuabao"];
+        titleLabel.text = @"斜挎包";
+    }
+    */
+    
+    //2.6.3.将数据分别放在对应的数组中，根据下标取出对应数据（不可取，图片和名称没有直接的关系）
+    /*
+    NSArray *icons = @[@"xiekuabao",@"danjianbao",@"shuangjianbao",@"qianbao",@"liantiaobao",@"shoutibao"];
+    NSArray *names = @[@"斜挎包",@"单肩包",@"双肩包",@"钱包",@"链条包",@"手提包"];
+    iconView.image = [UIImage imageNamed:icons[index]];
+    titleLabel.text = names[index];
+     */
+    
+    //2.6.4.将数据放入数组中，但是每一个数据都是一个字典，每一个字典都是一个商品
+    
+    
+    /***************************3.判断按钮状态****************************/
     /*
     if(self.shoppingCartView.subviews.count == 6){
         sender.enabled = NO;
