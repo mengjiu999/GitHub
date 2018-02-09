@@ -38,7 +38,7 @@
 #pragma mark 添加商品
 
 - (IBAction)addProduct:(UIButton *)sender {
-    //常量
+    /***************************1.常量****************************/
     //1.1定义一些常量
     CGFloat width = 90;
     CGFloat height = 110;
@@ -50,43 +50,59 @@
     CGFloat x = index % 3 * (width + hMargin);
     CGFloat y = index / 3 * (height + wMargin );
     
-    //创建商品的view
+    
+    /***************************2.添加商品****************************/
+    //2.1添加商品的view
     UIView *productView = [[UIView alloc] init];
     productView.backgroundColor = [UIColor yellowColor];
     
-    //设置frame
+    //2.2设置frame
     productView.frame = CGRectMake(x, y, width, height);
     
     
-    //添加到购物车
+    //2.3添加到购物车
     [self.shoppingCartView addSubview:productView];
     
-    //self.index++;
+    //2.4添加UIimageView对象用于显示商品的图片
+    UIImageView *iconView = [[UIImageView alloc] init];
+    iconView.frame = CGRectMake(0, 0, width, width);
+    iconView.backgroundColor = [UIColor yellowColor];
+    [productView addSubview:iconView];
     
-    //判断按钮的状态
+    ///2.5添加UILabel对象用于显示商品的名称
+    UILabel *titleLabel = [[UILabel alloc] init];
+    titleLabel.frame = CGRectMake(0, width, width, height - width);
+    titleLabel.backgroundColor = [UIColor blackColor];
+    [productView addSubview:titleLabel];
+    
+    
+   /***************************3.判断按钮状态****************************/
     /*
     if(self.shoppingCartView.subviews.count == 6){
         sender.enabled = NO;
     }
      */
-    self.removeProductbtn.enabled = self.shoppingCartView.subviews.count != 6;
+    sender.enabled = self.shoppingCartView.subviews.count != 6;
+    self.removeProductbtn.enabled = YES;
 }
 
 #pragma mark 移除商品
 - (IBAction)removeProduct:(UIButton *)sender {
-    //移除最后一个商品
+    /***************************1.移除最后一个商品****************************/
     UIView *lastProduct = [self.shoppingCartView.subviews lastObject];
     [lastProduct removeFromSuperview];
     //self.index--;
     
-    //判断按钮状态
+    /***************************2.判断按钮状态****************************/
     /*
      if(self.shoppingCartView.subviews.count == 0){
         sender.enabled = NO;
     }
      */
+    //2.1当商品数为0时不可移除
     sender.enabled = self.shoppingCartView.subviews.count;
-    //判断添加按钮的状态
+    
+    //2.2令添加商品按钮可用
     self.addProductbtn.enabled = YES;
     
 }
