@@ -136,7 +136,7 @@
      */
     
     //2.6.4.将数据放入数组中，但是每一个数据都是一个字典，每一个字典都是一个商品
-    NSDictionary *productdic = self.  products[index];
+    NSDictionary *productdic = self. products[index];
     iconView.image = [UIImage imageNamed:productdic[@"icon"]];
     titleLabel.text = productdic[@"title"];
     
@@ -168,7 +168,12 @@
     
     //2.2令添加商品按钮可用
     self.addProductbtn.enabled = YES;
-    
+
+-(void)demo
+    {
+        NSDictionary *productDict = self._products[2];
+    }
+        
 #pragma mark - 懒加载
 /*
  懒加载的方法：
@@ -190,6 +195,5 @@
     }
     return _products;
 }
--(void)
 
 @end
