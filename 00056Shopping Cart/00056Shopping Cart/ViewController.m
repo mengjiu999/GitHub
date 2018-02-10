@@ -168,7 +168,8 @@
     
     //2.2令添加商品按钮可用
     self.addProductbtn.enabled = YES;
-
+}
+/*
 -(void)demo
     {
         NSDictionary *productDict = self._products[2];
@@ -181,10 +182,10 @@
  2.重写get方法
  3.在get方法中判断，变量是否有值，直接返回，如果没有值，则加载数据
  */
--(NSArray *)products
-{
+
+-(NSArray *)products{
     if(_products == nil){
-        _products =  = @[
+        _products =   @[
                          @{@"icon" : @"liantiaobao",@"title" : @"链条包"},
                          @{@"icon" : @"shoutibao",@"title" : @"手提包"},
                          @{@"icon" : @"danjianbao",@"title" : @"单肩包"},
