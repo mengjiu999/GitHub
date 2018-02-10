@@ -51,6 +51,7 @@
 		18C7AC55202C883C009A37F3 /* 00056Shopping CartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "00056Shopping CartUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C7AC59202C883C009A37F3 /* _0056Shopping_CartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0056Shopping_CartUITests.m; sourceTree = "<group>"; };
 		18C7AC5B202C883C009A37F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C7AC7A202F4B28009A37F3 /* products.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = products.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +111,7 @@
 				18C7AC40202C883C009A37F3 /* LaunchScreen.storyboard */,
 				18C7AC43202C883C009A37F3 /* Info.plist */,
 				18C7AC44202C883C009A37F3 /* main.m */,
+				18C7AC7A202F4B28009A37F3 /* products.plist */,
 			);
 			path = "00056Shopping Cart";
 			sourceTree = "<group>";

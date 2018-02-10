@@ -185,14 +185,13 @@
 
 -(NSArray *)products{
     if(_products == nil){
-        _products =   @[
-                         @{@"icon" : @"liantiaobao",@"title" : @"链条包"},
-                         @{@"icon" : @"shoutibao",@"title" : @"手提包"},
-                         @{@"icon" : @"danjianbao",@"title" : @"单肩包"},
-                         @{@"icon" : @"shuangjianbao",@"title" : @"双肩包"},
-                         @{@"icon" : @"xiekuabao",@"title" : @"斜挎包"},
-                         @{@"icon" : @"qianbao",@"title" : @"钱包"},
-                         ];
+        //实际开发中，不要将数据和代码混在一起
+        //从资源包中，加载products.plist文件
+        //1.获取plist文件的路径
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"products.plist" ofType:nil];
+        
+        //2.读取plist文件
+        _products = [NSArray arrayWithContentsOfFile:plistPath];
     }
     return _products;
 }

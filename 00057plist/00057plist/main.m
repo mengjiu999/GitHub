@@ -27,11 +27,15 @@ int main(int argc, const char * argv[]) {
          */
         
         //3.将一个数组，该数组中都是字典对象，写入plist文件
-        NSArray *persons = @[
-                             @{@"name" : @"zhk",@"height" : @"176"},
-                             @{@"name" : @"jyn",@"height" : @"166"}
-                             ];
-        BOOL flag = [persons writeToFile:@"/Users/Desktop/names.plist" atomically:YES];
+        NSArray *products = @[
+                          @{@"icon" : @"liantiaobao",@"title" : @"链条包"},
+                          @{@"icon" : @"shoutibao",@"title" : @"手提包"},
+                          @{@"icon" : @"danjianbao",@"title" : @"单肩包"},
+                          @{@"icon" : @"shuangjianbao",@"title" : @"双肩包"},
+                          @{@"icon" : @"xiekuabao",@"title" : @"斜挎包"},
+                          @{@"icon" : @"qianbao",@"title" : @"钱包"},
+                          ];
+        BOOL flag = [products writeToFile:@"/Users/apple/Desktop/products.plist" atomically:YES];
         if(flag){
             NSLog(@"写入成功");
         }else{
