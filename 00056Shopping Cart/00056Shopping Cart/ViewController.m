@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "Products.h"
 @interface ViewController ()
 //购物车
 @property (weak, nonatomic) IBOutlet UIView *shoppingCartView;
@@ -48,8 +48,8 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-#pragma mark-添加和移除商品
-#pragma mark 添加商品
+#pragma mark - 添加和移除商品
+#pragma mark - 添加商品
 
 - (IBAction)addProduct:(UIButton *)sender {
     /***************************1.常量****************************/
@@ -80,13 +80,11 @@
     //2.4添加UIimageView对象用于显示商品的图片
     UIImageView *iconView = [[UIImageView alloc] init];
     iconView.frame = CGRectMake(0, 0, width, width);
-    //iconView.backgroundColor = [UIColor yellowColor];
     [productView addSubview:iconView];
     
     ///2.5添加UILabel对象用于显示商品的名称
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.frame = CGRectMake(0, width, width, height - width);
-    //titleLabel.backgroundColor = [UIColor blue Color];
     titleLabel.textAlignment = NSTextAlignmentCenter;
     [productView addSubview:titleLabel];
     
@@ -136,9 +134,11 @@
      */
     
     //2.6.4.将数据放入数组中，但是每一个数据都是一个字典，每一个字典都是一个商品
-    NSDictionary *productdic = self. products[index];
-    iconView.image = [UIImage imageNamed:productdic[@"icon"]];
-    titleLabel.text = productdic[@"title"];
+    //NSLog(@"%@",self.products);
+    //NSDictionary *productdic = self. products[index];
+    Products *product = self.products[index];
+    iconView.image = [UIImage imageNamed:product.icon];
+    titleLabel.text = product.title ;
     
     /***************************3.判断按钮状态****************************/
     /*
@@ -176,7 +176,7 @@
     }
         
 #pragma mark - 懒加载
- /*
+
  懒加载的方法：
  1.定义成员变量
  2.重写get方法
@@ -188,10 +188,28 @@
         //实际开发中，不要将数据和代码混在一起
         //从资源包中，加载products.plist文件
         //1.获取plist文件的路径
-        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"products.plist" ofType:nil];
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"products" ofType:@"plist"];
+        NSLog(@"-----%@------",plistPath);
         
         //2.读取plist文件
         _products = [NSArray arrayWithContentsOfFile:plistPath];
+        
+        //问题：_products数组中存放的都是字典，字典在实际开发中使用起来并不是很方便
+        //3.将字典转换成模型对象
+        NSMutableArray *tempArray = [NSMutableArray array];
+        for (NSDictionary *dict in _products) {
+            //3.1创建模型对象
+            Products *product = [[Products alloc] init];
+            
+            //3.2给模型对象的属性赋值
+            product.icon = dict[@"icon"];
+            product.title = dict[@"title"];
+            
+            //3.3将模型对象添加到数组中
+            [tempArray addObject:product];
+            
+        }
+        _products = tempArray;
     }
     return _products;
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184B5AA12030240600A67BAC /* Products.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B5AA02030240600A67BAC /* Products.m */; };
 		18C7AC37202C883C009A37F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C7AC36202C883C009A37F3 /* AppDelegate.m */; };
 		18C7AC3A202C883C009A37F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C7AC39202C883C009A37F3 /* ViewController.m */; };
 		18C7AC3D202C883C009A37F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C7AC3B202C883C009A37F3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		18C7AC45202C883C009A37F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C7AC44202C883C009A37F3 /* main.m */; };
 		18C7AC4F202C883C009A37F3 /* _0056Shopping_CartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C7AC4E202C883C009A37F3 /* _0056Shopping_CartTests.m */; };
 		18C7AC5A202C883C009A37F3 /* _0056Shopping_CartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C7AC59202C883C009A37F3 /* _0056Shopping_CartUITests.m */; };
+		3D509DC820301AB6009796C1 /* products.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D509DC720301AB6009796C1 /* products.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		187D152C20301F2A00926DF6 /* products.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = products.plist; sourceTree = "<group>"; };
+		184B5A9F2030240600A67BAC /* Products.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Products.h; sourceTree = "<group>"; };
+		184B5AA02030240600A67BAC /* Products.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Products.m; sourceTree = "<group>"; };
 		18C7AC32202C883C009A37F3 /* 00056Shopping Cart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "00056Shopping Cart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C7AC35202C883C009A37F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18C7AC36202C883C009A37F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		18C7AC55202C883C009A37F3 /* 00056Shopping CartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "00056Shopping CartUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C7AC59202C883C009A37F3 /* _0056Shopping_CartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0056Shopping_CartUITests.m; sourceTree = "<group>"; };
 		18C7AC5B202C883C009A37F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D509DC720301AB6009796C1 /* products.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = products.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184B5A9E2030238D00A67BAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D509DC720301AB6009796C1 /* products.plist */,
+				18C7AC44202C883C009A37F3 /* main.m */,
+				184B5A9F2030240600A67BAC /* Products.h */,
+				184B5AA02030240600A67BAC /* Products.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		18C7AC29202C883C009A37F3 = {
 			isa = PBXGroup;
 			children = (
@@ -107,11 +122,10 @@
 				18C7AC38202C883C009A37F3 /* ViewController.h */,
 				18C7AC39202C883C009A37F3 /* ViewController.m */,
 				18C7AC3B202C883C009A37F3 /* Main.storyboard */,
-				187D152C20301F2A00926DF6 /* products.plist */,
 				18C7AC3E202C883C009A37F3 /* Assets.xcassets */,
 				18C7AC40202C883C009A37F3 /* LaunchScreen.storyboard */,
 				18C7AC43202C883C009A37F3 /* Info.plist */,
-				18C7AC44202C883C009A37F3 /* main.m */,
+				184B5A9E2030238D00A67BAC /* Supporting Files */,
 			);
 			path = "00056Shopping Cart";
 			sourceTree = "<group>";
@@ -240,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D509DC820301AB6009796C1 /* products.plist in Resources */,
 				18C7AC42202C883C009A37F3 /* LaunchScreen.storyboard in Resources */,
 				18C7AC3F202C883C009A37F3 /* Assets.xcassets in Resources */,
 				18C7AC3D202C883C009A37F3 /* Main.storyboard in Resources */,
@@ -268,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C7AC3A202C883C009A37F3 /* ViewController.m in Sources */,
+				184B5AA12030240600A67BAC /* Products.m in Sources */,
 				18C7AC45202C883C009A37F3 /* main.m in Sources */,
 				18C7AC37202C883C009A37F3 /* AppDelegate.m in Sources */,
 			);
