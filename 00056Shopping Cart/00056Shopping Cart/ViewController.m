@@ -209,7 +209,7 @@
             [tempArray addObject:product];
             
         }
-        _products = tempArray;
+        _products = tempArray; 
     }
     return _products;
 }
