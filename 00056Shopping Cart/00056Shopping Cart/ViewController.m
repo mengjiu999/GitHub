@@ -124,11 +124,17 @@
     iconView.image = [UIImage imageNamed:product.icon];
     titleLabel.text = product.title ;
      */
-    Products *products = self.products[index];
-    product.iconView.image = [UIImage imageNamed:products.icon];
-    product.titleLabel.text = products.title;
+   
+    //product.iconView.image = [UIImage imageNamed:products.icon];
+    //product.titleLabel.text = products.title;
+    /*
+    [product setImage:products.icon];
+    [product setTitle:products.title];
+    */
     
-    
+    //Products *products = self.products[index];
+    //product.products = products;
+    product.products = self.products[index];
     /***************************3.判断按钮状态****************************/
     /*
     if(self.shoppingCartView.subviews.count == 6){

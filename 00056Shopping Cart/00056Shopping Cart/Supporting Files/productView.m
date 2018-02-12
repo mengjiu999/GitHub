@@ -7,8 +7,12 @@
 //
 
 #import "productView.h"
+#import "Products.h"
 @interface productView ()
-
+//商品的图片
+@property (nonatomic,weak) UIImageView *iconView;
+//商品的文字
+@property (nonatomic,weak) UILabel *titleLabel;
 @end
 
 @implementation productView
@@ -23,6 +27,7 @@
         
         //添加商品的文字
         UILabel *titleLabel = [[UILabel alloc] init];
+        titleLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:titleLabel];
         self.titleLabel = titleLabel;
     }
@@ -41,4 +46,22 @@
     self.titleLabel.frame = CGRectMake(0, width, width, height - width);
 }
 
+#pragma mark  - 实现接口方法
+/*
+-(void)setImage :(NSString *)iconName{
+    self.iconView.image = [UIImage imageNamed:iconName];
+}
+-(void)setTitle :(NSString *)title{
+    self.titleLabel.text = title;
+}
+ */
+
+#pragma mark - 重写set方法，提供接口
+-(void)setProducts :(Products *)products{
+    _products = products;
+    self.iconView.image = [UIImage imageNamed:products.icon];
+    self.titleLabel.text = products.title;
+    
+    
+}
 @end

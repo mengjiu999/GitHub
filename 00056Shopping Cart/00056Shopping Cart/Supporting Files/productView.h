@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Products; 
 
 @interface productView : UIView
-//商品的图片
-@property (nonatomic,weak) UIImageView *iconView;
-//商品的文字
-@property (nonatomic,weak) UILabel *titleLabel;
+//对外提供统一接口
+/*
+-(void)setImage :(NSString *)iconName;
+-(void)setTitle :(NSString *)title;
+ */
+@property (nonatomic , strong) Products *products;
 @end
