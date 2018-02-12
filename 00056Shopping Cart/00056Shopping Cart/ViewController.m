@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Products.h"
+#import "productView.h"
 @interface ViewController ()
 //购物车
 @property (weak, nonatomic) IBOutlet UIView *shoppingCartView;
@@ -66,27 +67,9 @@
     
     
     /***************************2.添加商品****************************/
-    //2.1添加商品的view
-    UIView *productView = [[UIView alloc] init];
-    //productView.backgroundColor = [UIColor yellowColor];
-    
-    //2.2设置frame
-    productView.frame = CGRectMake(x, y, width, height);
-    
-    
-    //2.3添加到购物车
-    [self.shoppingCartView addSubview:productView];
-    
-    //2.4添加UIimageView对象用于显示商品的图片
-    UIImageView *iconView = [[UIImageView alloc] init];
-    iconView.frame = CGRectMake(0, 0, width, width);
-    [productView addSubview:iconView];
-    
-    ///2.5添加UILabel对象用于显示商品的名称
-    UILabel *titleLabel = [[UILabel alloc] init];
-    titleLabel.frame = CGRectMake(0, width, width, height - width);
-    titleLabel.textAlignment = NSTextAlignmentCenter;
-    [productView addSubview:titleLabel];
+    productView *product = [[productView alloc] init];
+    product.frame = CGRectMake(x, y, width, height);
+    [self.shoppingCartView addSubview:product];
     
     //2.6 设置展示数据
     /*
@@ -134,11 +117,17 @@
      */
     
     //2.6.4.将数据放入数组中，但是每一个数据都是一个字典，每一个字典都是一个商品
-    //NSLog(@"%@",self.products);
+    /*
+     NSLog(@"%@",self.products);
     //NSDictionary *productdic = self. products[index];
     Products *product = self.products[index];
     iconView.image = [UIImage imageNamed:product.icon];
     titleLabel.text = product.title ;
+     */
+    Products *products = self.products[index];
+    product.iconView.image = [UIImage imageNamed:products.icon];
+    product.titleLabel.text = products.title;
+    
     
     /***************************3.判断按钮状态****************************/
     /*
@@ -189,7 +178,6 @@
         //从资源包中，加载products.plist文件
         //1.获取plist文件的路径
         NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"products" ofType:@"plist"];
-        NSLog(@"-----%@------",plistPath);
         
         //2.读取plist文件
         _products = [NSArray arrayWithContentsOfFile:plistPath];
