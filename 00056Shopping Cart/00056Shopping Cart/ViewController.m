@@ -168,6 +168,7 @@
 -(void)demo
     {
         NSDictionary *productDict = self._products[2];
+ 
     }
         
 #pragma mark - 懒加载
