@@ -23,7 +23,21 @@
     productView.frame = CGRectMake(100, 100, 70, 100);
     
     //2.添加到控制器
-    [self.view addSubview:productView ];
+    [self.view addSubview:productView];
+    
+    //3.设置数据
+    //方法一（tag效率低）
+    /*
+    //3.1.取出控件
+    UIImageView *iconView = [productView viewWithTag:1000];
+    UILabel *titleLabel = [productView viewWithTag:2000];
+    
+    //3.2.设置数据
+    iconView.image = [UIImage imageNamed:@"danjianbao"];
+    titleLabel.text = @"单肩包";
+     */
+    
+    
 }
 
 

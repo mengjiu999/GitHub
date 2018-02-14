@@ -16,6 +16,7 @@
 		182B264D203470C700690CCF /* _0060xib_custom_ViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B264C203470C700690CCF /* _0060xib_custom_ViewTests.m */; };
 		182B2658203470C700690CCF /* _0060xib_custom_ViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B2657203470C700690CCF /* _0060xib_custom_ViewUITests.m */; };
 		182B2666203470E900690CCF /* Product.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182B2665203470E900690CCF /* Product.xib */; };
+		182B26692034775500690CCF /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B26682034775500690CCF /* Product.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		182B2657203470C700690CCF /* _0060xib_custom_ViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0060xib_custom_ViewUITests.m; sourceTree = "<group>"; };
 		182B2659203470C700690CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182B2665203470E900690CCF /* Product.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Product.xib; sourceTree = "<group>"; };
+		182B26672034775500690CCF /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		182B26682034775500690CCF /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				182B2641203470C700690CCF /* Info.plist */,
 				182B2642203470C700690CCF /* main.m */,
 				182B2665203470E900690CCF /* Product.xib */,
+				182B26672034775500690CCF /* Product.h */,
+				182B26682034775500690CCF /* Product.m */,
 			);
 			path = "00060xib custom View";
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				182B2638203470C700690CCF /* ViewController.m in Sources */,
+				182B26692034775500690CCF /* Product.m in Sources */,
 				182B2643203470C700690CCF /* main.m in Sources */,
 				182B2635203470C700690CCF /* AppDelegate.m in Sources */,
 			);
