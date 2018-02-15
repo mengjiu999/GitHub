@@ -8,16 +8,14 @@
 
 #import "Product.h"
 @interface Product ()
+//商品的图片
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
 
+//商品的名称
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @end
 @implementation Product
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+
 
 @end
