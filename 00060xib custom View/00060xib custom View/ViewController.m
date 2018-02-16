@@ -5,7 +5,12 @@
 //  Created by apple on 2018/2/14.
 //  Copyright © 2018年 YuNuo. All rights reserved.
 //
-
+/*
+ xiv的使用注意:
+ 1.如果一个View是通过xib加载，那么创建View的时候，不能通过alloc init加载
+ 2.如果多处都使用View来创建该View，最好提供一个快速创建类的方法
+ 3.如果一个View是从xib加载出来的，那么不会执行init和initWithFrame方法
+ */
 #import "ViewController.h"
 #import "Product.h"
 
@@ -18,7 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //1.通过xib创建商品的View
-    Product *productView = [[[NSBundle mainBundle] loadNibNamed:@"Product" owner:nil options:nil] firstObject];
+    //Product *productView = [[[NSBundle mainBundle] loadNibNamed:@"Product" owner:nil options:nil] firstObject];
+    Product *productView = [Product product];
     
     //1.1设置frame
     productView.frame = CGRectMake(100, 100, 70, 100);

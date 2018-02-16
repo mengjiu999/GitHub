@@ -11,4 +11,6 @@
 @interface Product : UIView
 -(void)setIcon :(NSString *)iconName;
 -(void)setTitle :(NSString *)title;
+
++(instancetype)product;
 @end
