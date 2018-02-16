@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Product.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //1.通过xib创建商品的View
-    UIView *productView = [[[NSBundle mainBundle] loadNibNamed:@"Product" owner:nil options:nil] firstObject];
+    Product *productView = [[[NSBundle mainBundle] loadNibNamed:@"Product" owner:nil options:nil] firstObject];
     
     //1.1设置frame
     productView.frame = CGRectMake(100, 100, 70, 100);
@@ -36,8 +37,8 @@
     iconView.image = [UIImage imageNamed:@"danjianbao"];
     titleLabel.text = @"单肩包";
      */
-    
-    
+    [productView setIcon:@"danjianbao"];
+    [productView setTitle:@"单肩包"];
 }
 
 
