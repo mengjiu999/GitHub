@@ -10,6 +10,7 @@
  1.如果一个View是通过xib加载，那么创建View的时候，不能通过alloc init加载
  2.如果多处都使用View来创建该View，最好提供一个快速创建类的方法
  3.如果一个View是从xib加载出来的，那么不会执行init和initWithFrame方法
+ 4.如果一个View是从xib加载出来的，会执行initWithCoder和awakeFromNib方法
  */
 #import "ViewController.h"
 #import "Product.h"
