@@ -18,6 +18,7 @@
 		1804D6EE20393C8B00EC69B1 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804D6ED20393C8B00EC69B1 /* ListTableViewCell.m */; };
 		1804D6F020393CA200EC69B1 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1804D6EF20393CA200EC69B1 /* ListTableViewCell.xib */; };
 		1804D6F9203945C100EC69B1 /* RecordFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804D6F8203945C100EC69B1 /* RecordFile.m */; };
+		1804D6FC2039475600EC69B1 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804D6FB2039475600EC69B1 /* RecordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		1804D6EF20393CA200EC69B1 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		1804D6F7203945C100EC69B1 /* RecordFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordFile.h; sourceTree = "<group>"; };
 		1804D6F8203945C100EC69B1 /* RecordFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordFile.m; sourceTree = "<group>"; };
+		1804D6FA2039475600EC69B1 /* RecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		1804D6FB2039475600EC69B1 /* RecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 				1804D6EF20393CA200EC69B1 /* ListTableViewCell.xib */,
 				1804D6F7203945C100EC69B1 /* RecordFile.h */,
 				1804D6F8203945C100EC69B1 /* RecordFile.m */,
+				1804D6FA2039475600EC69B1 /* RecordViewController.h */,
+				1804D6FB2039475600EC69B1 /* RecordViewController.m */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				1804D6BD20393BBA00EC69B1 /* ViewController.m in Sources */,
 				1804D6F9203945C100EC69B1 /* RecordFile.m in Sources */,
 				1804D6EE20393C8B00EC69B1 /* ListTableViewCell.m in Sources */,
+				1804D6FC2039475600EC69B1 /* RecordViewController.m in Sources */,
 				1804D6C820393BBA00EC69B1 /* main.m in Sources */,
 				1804D6BA20393BBA00EC69B1 /* AppDelegate.m in Sources */,
 			);
