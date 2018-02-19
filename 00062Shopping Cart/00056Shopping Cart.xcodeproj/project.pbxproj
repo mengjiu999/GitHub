@@ -10,6 +10,7 @@
 		1804D768203AA4A200EC69B1 /* ProductsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804D767203AA4A200EC69B1 /* ProductsView.m */; };
 		1804D76A203AA4D100EC69B1 /* ProductsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1804D769203AA4D100EC69B1 /* ProductsView.xib */; };
 		184B5AA12030240600A67BAC /* Products.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B5AA02030240600A67BAC /* Products.m */; };
+		184B5AEB2031804A00A67BAC /* productView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184B5AEA2031804A00A67BAC /* productView.m */; };
 		18C7AC37202C883C009A37F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C7AC36202C883C009A37F3 /* AppDelegate.m */; };
 		18C7AC3A202C883C009A37F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C7AC39202C883C009A37F3 /* ViewController.m */; };
 		18C7AC3D202C883C009A37F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C7AC3B202C883C009A37F3 /* Main.storyboard */; };
@@ -44,6 +45,8 @@
 		1804D769203AA4D100EC69B1 /* ProductsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsView.xib; sourceTree = "<group>"; };
 		184B5A9F2030240600A67BAC /* Products.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Products.h; sourceTree = "<group>"; };
 		184B5AA02030240600A67BAC /* Products.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Products.m; sourceTree = "<group>"; };
+		184B5AE92031804A00A67BAC /* productView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = productView.h; sourceTree = "<group>"; };
+		184B5AEA2031804A00A67BAC /* productView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = productView.m; sourceTree = "<group>"; };
 		18C7AC32202C883C009A37F3 /* 00056Shopping Cart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "00056Shopping Cart.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C7AC35202C883C009A37F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18C7AC36202C883C009A37F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 				18C7AC44202C883C009A37F3 /* main.m */,
 				184B5A9F2030240600A67BAC /* Products.h */,
 				184B5AA02030240600A67BAC /* Products.m */,
+				184B5AE92031804A00A67BAC /* productView.h */,
+				184B5AEA2031804A00A67BAC /* productView.m */,
 				1804D766203AA4A200EC69B1 /* ProductsView.h */,
 				1804D767203AA4A200EC69B1 /* ProductsView.m */,
 				1804D769203AA4D100EC69B1 /* ProductsView.xib */,
@@ -293,6 +298,7 @@
 			files = (
 				18C7AC3A202C883C009A37F3 /* ViewController.m in Sources */,
 				184B5AA12030240600A67BAC /* Products.m in Sources */,
+				184B5AEB2031804A00A67BAC /* productView.m in Sources */,
 				18C7AC45202C883C009A37F3 /* main.m in Sources */,
 				1804D768203AA4A200EC69B1 /* ProductsView.m in Sources */,
 				18C7AC37202C883C009A37F3 /* AppDelegate.m in Sources */,

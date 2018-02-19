@@ -1,5 +1,5 @@
 //
-//  main.m
+//  ViewController.h
 //  00056Shopping Cart
 //
 //  Created by apple on 2018/2/8.
@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AppDelegate.h"
 
-int main(int argc, char * argv[]) {
-  
-}
+@interface ViewController : UIViewController
+
+
+@end
+

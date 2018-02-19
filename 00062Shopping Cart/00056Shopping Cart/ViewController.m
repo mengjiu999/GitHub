@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Products.h"
+#import "productView.h"
 #import "ProductsView.h"
 @interface ViewController ()
 //购物车
@@ -31,7 +32,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+   //加载数据（不能这么写）
+    /*
+    self.products = @[
+                      @{@"icon" : @"liantiaobao",@"title" : @"链条包"},
+                      @{@"icon" : @"shoutibao",@"title" : @"手提包"},
+                      @{@"icon" : @"danjianbao",@"title" : @"单肩包"},
+                      @{@"icon" : @"shuangjianbao",@"title" : @"双肩包"},
+                      @{@"icon" : @"xiekuabao",@"title" : @"斜挎包"},
+                      @{@"icon" : @"qianbao",@"title" : @"钱包"},
+                      ];
+     */
 }
 
 
@@ -56,17 +68,74 @@
     
     
     /***************************2.添加商品****************************/
-    //1.创建商品
-    ProductsView *productsView = [ProductsView productsView];
-    productsView.frame = CGRectMake(x, y, width, height);
-    [self.shoppingCartView addSubview:productsView];
+    productView *product = [[productView alloc] init];
+    product.frame = CGRectMake(x, y, width, height);
+    [self.shoppingCartView addSubview:product];
     
-    //2.设置数据
-    self.products = self.products[index];
-     
+    //2.6 设置展示数据
+    /*
+    if(self.products == nil){
+        self.products = @[
+                          @{@"icon" : @"liantiaobao",@"title" : @"链条包"},
+                          @{@"icon" : @"shoutibao",@"title" : @"手提包"},
+                          @{@"icon" : @"danjianbao",@"title" : @"单肩包"},
+                          @{@"icon" : @"shuangjianbao",@"title" : @"双肩包"},
+                          @{@"icon" : @"xiekuabao",@"title" : @"斜挎包"},
+                          @{@"icon" : @"qianbao",@"title" : @"钱包"},
+                          ];
+    }
+   */
+  
+    //2.6.1.所有的数据都一样（不可取）
+    /*
+    iconView.image = [UIImage imageNamed:@"danjianbao"];
+    titleLabel.text = @"单肩包";
+     */
     
+    //2.6.2.判断下标值，根据不同的下标值，设置不同的数据(不可取)
+    /*
+    if(index == 0){
+        iconView.image = [UIImage imageNamed:@"xiekuabao"];
+        titleLabel.text = @"斜挎包";
+    }else if(index == 1){
+        iconView.image = [UIImage imageNamed:@"xiekuabao"];
+        titleLabel.text = @"斜挎包";
+    }else if(index == 2){
+        iconView.image = [UIImage imageNamed:@"xiekuabao"];
+        titleLabel.text = @"斜挎包";
+    }else if(index == 3){
+        iconView.image = [UIImage imageNamed:@"xiekuabao"];
+        titleLabel.text = @"斜挎包";
+    }
+    */
     
+    //2.6.3.将数据分别放在对应的数组中，根据下标取出对应数据（不可取，图片和名称没有直接的关系）
+    /*
+    NSArray *icons = @[@"xiekuabao",@"danjianbao",@"shuangjianbao",@"qianbao",@"liantiaobao",@"shoutibao"];
+    NSArray *names = @[@"斜挎包",@"单肩包",@"双肩包",@"钱包",@"链条包",@"手提包"];
+    iconView.image = [UIImage imageNamed:icons[index]];
+    titleLabel.text = names[index];
+     */
     
+    //2.6.4.将数据放入数组中，但是每一个数据都是一个字典，每一个字典都是一个商品
+    /*
+     NSLog(@"%@",self.products);
+    //NSDictionary *productdic = self. products[index];
+    Products *product = self.products[index];
+    iconView.image = [UIImage imageNamed:product.icon];
+    titleLabel.text = product.title ;
+     */
+   
+    //product.iconView.image = [UIImage imageNamed:products.icon];
+    //product.titleLabel.text = products.title;
+    /*
+    [product setImage:products.icon];
+    [product setTitle:products.title];
+    */
+    
+    //Products *products = self.products[index];
+    //product.products = products;
+    product.products = self.products[index];
     /***************************3.判断按钮状态****************************/
     /*
     if(self.shoppingCartView.subviews.count == 6){
