@@ -26,11 +26,14 @@
 //商品的数据
 @property (nonatomic, strong) NSArray *products;
 
+//提示的引用
+@property (weak, nonatomic) IBOutlet UILabel *hubLabel;
+
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+ - (void)viewDidLoad {
     [super viewDidLoad];
     
    //加载数据（不能这么写）
@@ -144,11 +147,28 @@
      */
     sender.enabled = self.shoppingCartView.subviews.count != 6;
     self.removeProductbtn.enabled = YES;
+    /*********************4.购物车已满，给用户提示************************/
+    if(self.shoppingCartView.subviews.count == 6){
+        [self showHubInfo:@"购物车已满"];
+    }
 }
 
+-(void)showHubInfo:(NSString *)hubInfo
+{   //改变显示器的文字
+    self.hubLabel.text = hubInfo;
+    
+    //出现动画和消失动画
+        [UIView animateWithDuration:1.0 delay:1.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            self.hubLabel.alpha = 1.0;
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:1.0 delay:2.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
+                self.hubLabel.alpha = 0,0;
+            } completion:nil];
+        }];
+}
 #pragma mark 移除商品
 - (IBAction)removeProduct:(UIButton *)sender {
-    /***************************1.移除最后一个商品****************************/
+    /**********************1.移除最后一个商品****************************/
     UIView *lastProduct = [self.shoppingCartView.subviews lastObject];
     [lastProduct removeFromSuperview];
     //self.index--;
@@ -164,6 +184,10 @@
     
     //2.2令添加商品按钮可用
     self.addProductbtn.enabled = YES;
+    /***************************3.购物车已空****************************/
+    if(self.shoppingCartView.subviews.count == 0){
+        [self showHubInfo:@"购物车已空"];
+    }
 }
 /*
 -(void)demo
