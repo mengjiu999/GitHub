@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
@@ -25,5 +25,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UITableViewDateSource
+//告诉TableView一共有多少组数据
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 4;
+}
 
+//告诉TableView第几组有多少行
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if(section == 0){
+        return 2;
+    }else{
+        return 3;
+    }
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    return cell;
+}
 @end
