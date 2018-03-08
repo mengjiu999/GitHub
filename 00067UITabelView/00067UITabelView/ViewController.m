@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()<UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *TableView;
 
 @end
 
@@ -41,6 +42,7 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     UITableViewCell *cell = [[UITableViewCell alloc] init];
     return cell;
 }
