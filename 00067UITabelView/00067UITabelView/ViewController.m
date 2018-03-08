@@ -43,7 +43,10 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    indexPath.section == 2;
+    indexPath.row == 1;
     UITableViewCell *cell = [[UITableViewCell alloc] init];
+    cell.textLabel.text = @"通用";
     return cell;
 }
 @end
