@@ -43,10 +43,21 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    indexPath.section == 2;
-    indexPath.row == 1;
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    UITableViewCell   *cell = [[UITableViewCell alloc] init];
+    
+    //设置cell右边显示的控件
+    //accessoryView优先级 >
+    //cell.accessoryView = [[UISwitch alloc] init];
+    //设置cell右边的指示样式
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = @"通用";
+    
     return cell;
+}
+
+//告诉tableView每一组的头部标题
+-(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+{
+    
 }
 @end

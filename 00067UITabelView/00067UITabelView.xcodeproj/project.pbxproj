@@ -16,6 +16,7 @@
 		187B0FD3204C3A5F006E6CAB /* _0067UITabelViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B0FD2204C3A5F006E6CAB /* _0067UITabelViewTests.m */; };
 		187B0FDE204C3A5F006E6CAB /* _0067UITabelViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B0FDD204C3A5F006E6CAB /* _0067UITabelViewUITests.m */; };
 		187B0FED2050FA96006E6CAB /* WiewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187B0FEC2050FA96006E6CAB /* WiewViewController.m */; };
+		188EC73B2052D3DE00A7FB3B /* CarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC7392052D3D400A7FB3B /* CarGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		187B0FDF204C3A5F006E6CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187B0FEB2050FA96006E6CAB /* WiewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WiewViewController.h; sourceTree = "<group>"; };
 		187B0FEC2050FA96006E6CAB /* WiewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WiewViewController.m; sourceTree = "<group>"; };
+		188EC7382052D3D400A7FB3B /* CarGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarGroup.h; sourceTree = "<group>"; };
+		188EC7392052D3D400A7FB3B /* CarGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarGroup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				187B0FC4204C3A5F006E6CAB /* LaunchScreen.storyboard */,
 				187B0FC7204C3A5F006E6CAB /* Info.plist */,
 				187B0FC8204C3A5F006E6CAB /* main.m */,
+				188EC7382052D3D400A7FB3B /* CarGroup.h */,
+				188EC7392052D3D400A7FB3B /* CarGroup.m */,
 			);
 			path = 00067UITabelView;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			files = (
 				187B0FBE204C3A5F006E6CAB /* ViewController.m in Sources */,
 				187B0FC9204C3A5F006E6CAB /* main.m in Sources */,
+				188EC73B2052D3DE00A7FB3B /* CarGroup.m in Sources */,
 				187B0FED2050FA96006E6CAB /* WiewViewController.m in Sources */,
 				187B0FBB204C3A5F006E6CAB /* AppDelegate.m in Sources */,
 			);
