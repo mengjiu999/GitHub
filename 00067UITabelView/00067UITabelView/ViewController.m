@@ -11,6 +11,8 @@
 @interface ViewController ()<UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *TableView;
 
+//所有的车数据
+@property (nonatomic, strong) NSArray *carGroups;
 @end
 
 @implementation ViewController
@@ -20,7 +22,16 @@
     
 }
 
-
+-(NSArray *)carGroups{
+    if(!_carGroups){
+        CarGroup *group0 = [[CarGroup alloc] init];
+        group0.header = @"德系品牌";
+        group0.footer = @"德系品牌lklklk";
+        group0.cars = @[@"奔驰"，@"宝马"];
+        _carGroups = @[group0];
+        }
+    return _carGroups;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -56,8 +67,8 @@
 }
 
 //告诉tableView每一组的头部标题
--(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
-{
-    
-}
+//-(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+//{
+//    NSLog(@)
+//}
 @end
