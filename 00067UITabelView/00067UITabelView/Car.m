@@ -9,5 +9,10 @@
 #import "Car.h"
 
 @implementation Car
-
++(instancetype)carWithName:(NSString *)name icon:(NSString *)icon{
+    Car *car = [[Car alloc] init];
+    car.name = name;
+    car.icon = icon; 
+    return car;
+}
 @end

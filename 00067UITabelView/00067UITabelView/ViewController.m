@@ -27,7 +27,10 @@
         CarGroup *group0 = [[CarGroup alloc] init];
         group0.header = @"德系品牌";
         group0.footer = @"德系品牌lklklk";
-        group0.cars = @[@"奔驰"，@"宝马"];
+        group0.cars = @[
+                        [Car carWithName:@"奔驰" icon:@"图片"],
+                        [Car carWithName:@"宝马" icon:@"图片"]
+                        ];
         _carGroups = @[group0];
         }
     return _carGroups;
@@ -40,21 +43,19 @@
 #pragma mark - UITableViewDateSource
 //告诉TableView一共有多少组数据
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 4;
+    return self.carGroups.count;
 }
 
 //告诉TableView第几组有多少行
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if(section == 0){
-        return 2;
-    }else{
-        return 3;
-    }
+    //取出第section组的模型
+    CarGroup *group = self.carGroups[section];
+    return group.cars.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell   *cell = [[UITableViewCell alloc] init];
+    UITableViewCell  *cell = [[UITableViewCell alloc] init];
     
     //设置cell右边显示的控件
     //accessoryView优先级 >
