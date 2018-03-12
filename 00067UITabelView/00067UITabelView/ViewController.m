@@ -62,14 +62,34 @@
     //cell.accessoryView = [[UISwitch alloc] init];
     //设置cell右边的指示样式
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    cell.textLabel.text = @"通用";
+    //取出indexPath.section这组的组模型
+    CarGroup *group = self.carGroups[indexPath.section];
+    
+    //取出对应的车模型
+    Car *car = group.cars[indexPath.row];
+    
+    //设置数据
+    cell.textLabel.text = car.name;
+    cell.imageView.image = car.icon;
+    
+    cell.textLabel.text = @"";
     
     return cell;
 }
 
 //告诉tableView每一组的头部标题
-//-(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
-//{
-//    NSLog(@)
-//}
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    
+    //取出第section组的组模型
+    CarGroup *group = self.carGroups[section];
+    return group.header;
+}
+
+//告诉tableView每一组的尾部标题
+-(NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
+    
+    //取出第section组的组模型
+    CarGroup *group = self.carGroups[section];
+    return group.footer;
+}
 @end
