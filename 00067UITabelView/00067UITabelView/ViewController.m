@@ -72,7 +72,7 @@
     cell.textLabel.text = car.name;
     cell.imageView.image = car.icon;
     
-    cell.textLabel.text = @"通用";
+    cell.textLabel.text = @"";
     
     return cell;
 }
