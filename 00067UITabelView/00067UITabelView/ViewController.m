@@ -25,7 +25,7 @@
 -(NSArray *)carGroups{
     if(!_carGroups){
         CarGroup *group0 = [[CarGroup alloc] init];
-        group0.header = @"德系品牌1";
+        group0.header = @"德系品牌";
         group0.footer = @"德系品牌lklklk";
         group0.cars = @[
                         [Car carWithName:@"奔驰" icon:@"图1片"],
