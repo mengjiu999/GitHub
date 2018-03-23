@@ -25,11 +25,11 @@
 -(NSArray *)carGroups{
     if(!_carGroups){
         CarGroup *group0 = [[CarGroup alloc] init];
-        group0.header = @"德系品牌";
+        group0.header = @"德系品牌111";
         group0.footer = @"德系品牌lklklk";
         group0.cars = @[
                         [Car carWithName:@"奔驰" icon:@"图片"],
-                        [Car carWithName:@"宝马" icon:@"图片2"]
+                        [Car carWithName:@"宝马" icon:@"图片"]
                         ];
         _carGroups = @[group0];
         }
