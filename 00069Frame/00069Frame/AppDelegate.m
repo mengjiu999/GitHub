@@ -1,16 +1,14 @@
 //
 //  AppDelegate.m
-//  00068View
+//  00069Frame
 //
-//  Created by apple on 2018/3/28.
+//  Created by apple on 2018/3/29.
 //  Copyright © 2018年 YuNuo. All rights reserved.
 //
 
 #import "AppDelegate.h"
-//1.如果有Main,它会加载Main.storyboard
-//2.创建一个窗口
-//3.把Main.storyboard箭头指向控制器，设为窗口的跟控制器
-//4.显示窗口（把窗口的根控制器的View，添加到窗口）
+
+
 @interface AppDelegate ()
 
 @end
@@ -19,7 +17,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //1.创建窗口
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    //2.设置窗口跟控制器
+    JYNTabbarcontroller *tabBarVC = [[JYNTabbarcontroller alloc] init];
+    self.window.rootViewController = tabBarVC;
+    
+    //3.显示窗口
+    [self.window makeKeyWindow];
+    
     return YES;
 }
 

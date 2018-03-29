@@ -1,16 +1,13 @@
 //
 //  AppDelegate.m
-//  00068View
+//  00070Frame
 //
-//  Created by apple on 2018/3/28.
+//  Created by apple on 2018/3/29.
 //  Copyright © 2018年 YuNuo. All rights reserved.
 //
 
 #import "AppDelegate.h"
-//1.如果有Main,它会加载Main.storyboard
-//2.创建一个窗口
-//3.把Main.storyboard箭头指向控制器，设为窗口的跟控制器
-//4.显示窗口（把窗口的根控制器的View，添加到窗口）
+
 @interface AppDelegate ()
 
 @end
