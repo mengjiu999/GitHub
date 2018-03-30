@@ -15,7 +15,6 @@
 		188EC821206CD36600A7FB3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC820206CD36600A7FB3B /* main.m */; };
 		188EC82B206CD36600A7FB3B /* _0070FrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC82A206CD36600A7FB3B /* _0070FrameTests.m */; };
 		188EC836206CD36600A7FB3B /* _0070FrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC835206CD36600A7FB3B /* _0070FrameUITests.m */; };
-		188EC845206CD38800A7FB3B /* UINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC844206CD38800A7FB3B /* UINavigationController.m */; };
 		188EC848206CD3A100A7FB3B /* JYNTabbarcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC847206CD3A100A7FB3B /* JYNTabbarcontroller.m */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +53,6 @@
 		188EC835206CD36600A7FB3B /* _0070FrameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0070FrameUITests.m; sourceTree = "<group>"; };
 		188EC837206CD36600A7FB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		188EC843206CD38800A7FB3B /* UINavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UINavigationController.h; sourceTree = "<group>"; };
-		188EC844206CD38800A7FB3B /* UINavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UINavigationController.m; sourceTree = "<group>"; };
 		188EC846206CD3A100A7FB3B /* JYNTabbarcontroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYNTabbarcontroller.h; sourceTree = "<group>"; };
 		188EC847206CD3A100A7FB3B /* JYNTabbarcontroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JYNTabbarcontroller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,9 +108,8 @@
 				188EC811206CD36600A7FB3B /* AppDelegate.h */,
 				188EC812206CD36600A7FB3B /* AppDelegate.m */,
 				188EC814206CD36600A7FB3B /* ViewController.h */,
-				188EC815206CD36600A7FB3B /* ViewController.m */,
 				188EC843206CD38800A7FB3B /* UINavigationController.h */,
-				188EC844206CD38800A7FB3B /* UINavigationController.m */,
+				188EC815206CD36600A7FB3B /* ViewController.m */,
 				188EC846206CD3A100A7FB3B /* JYNTabbarcontroller.h */,
 				188EC847206CD3A100A7FB3B /* JYNTabbarcontroller.m */,
 				188EC817206CD36600A7FB3B /* Main.storyboard */,
@@ -276,7 +273,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				188EC816206CD36600A7FB3B /* ViewController.m in Sources */,
-				188EC845206CD38800A7FB3B /* UINavigationController.m in Sources */,
 				188EC848206CD3A100A7FB3B /* JYNTabbarcontroller.m in Sources */,
 				188EC821206CD36600A7FB3B /* main.m in Sources */,
 				188EC813206CD36600A7FB3B /* AppDelegate.m in Sources */,
