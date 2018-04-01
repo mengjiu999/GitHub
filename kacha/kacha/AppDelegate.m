@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  kacha
+//  Kacha
 //
 //  Created by apple on 2018/3/31.
 //  Copyright © 2018年 YuNuo. All rights reserved.

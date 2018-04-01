@@ -1,6 +1,6 @@
 //
-//  kachaUITests.m
-//  kachaUITests
+//  KachaUITests.m
+//  KachaUITests
 //
 //  Created by apple on 2018/3/31.
 //  Copyright © 2018年 YuNuo. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface kachaUITests : XCTestCase
+@interface KachaUITests : XCTestCase
 
 @end
 
-@implementation kachaUITests
+@implementation KachaUITests
 
 - (void)setUp {
     [super setUp];
