@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187008CE20707DED002D5A72 /* LeftMenuViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 187008CD20707DED002D5A72 /* LeftMenuViewDemo.m */; };
+		187008D120707E40002D5A72 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187008D020707E40002D5A72 /* SecondViewController.m */; };
 		188EC8A0206F1F8800A7FB3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC89F206F1F8800A7FB3B /* AppDelegate.m */; };
 		188EC8A3206F1F8800A7FB3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC8A2206F1F8800A7FB3B /* ViewController.m */; };
 		188EC8A6206F1F8800A7FB3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188EC8A4206F1F8800A7FB3B /* Main.storyboard */; };
@@ -15,7 +17,6 @@
 		188EC8AE206F1F8800A7FB3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC8AD206F1F8800A7FB3B /* main.m */; };
 		188EC8B8206F1F8800A7FB3B /* KachaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC8B7206F1F8800A7FB3B /* KachaTests.m */; };
 		188EC8C3206F1F8800A7FB3B /* KachaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC8C2206F1F8800A7FB3B /* KachaUITests.m */; };
-		188EC8DC206F238300A7FB3B /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188EC8DB206F238300A7FB3B /* MenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		187008CC20707DED002D5A72 /* LeftMenuViewDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewDemo.h; sourceTree = "<group>"; };
+		187008CD20707DED002D5A72 /* LeftMenuViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewDemo.m; sourceTree = "<group>"; };
+		187008CF20707E40002D5A72 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		187008D020707E40002D5A72 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		188EC89B206F1F8800A7FB3B /* Kacha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kacha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		188EC89E206F1F8800A7FB3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		188EC89F206F1F8800A7FB3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,8 +57,6 @@
 		188EC8BE206F1F8800A7FB3B /* KachaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KachaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		188EC8C2206F1F8800A7FB3B /* KachaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KachaUITests.m; sourceTree = "<group>"; };
 		188EC8C4206F1F8800A7FB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		188EC8DA206F238300A7FB3B /* MenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
-		188EC8DB206F238300A7FB3B /* MenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +87,6 @@
 		188EC892206F1F8800A7FB3B = {
 			isa = PBXGroup;
 			children = (
-				188EC8DD206F239500A7FB3B /* MenvView */,
 				188EC89D206F1F8800A7FB3B /* Kacha */,
 				188EC8B6206F1F8800A7FB3B /* KachaTests */,
 				188EC8C1206F1F8800A7FB3B /* KachaUITests */,
@@ -109,7 +111,11 @@
 				188EC89F206F1F8800A7FB3B /* AppDelegate.m */,
 				188EC8A1206F1F8800A7FB3B /* ViewController.h */,
 				188EC8A2206F1F8800A7FB3B /* ViewController.m */,
+				187008CC20707DED002D5A72 /* LeftMenuViewDemo.h */,
+				187008CD20707DED002D5A72 /* LeftMenuViewDemo.m */,
 				188EC8A4206F1F8800A7FB3B /* Main.storyboard */,
+				187008CF20707E40002D5A72 /* SecondViewController.h */,
+				187008D020707E40002D5A72 /* SecondViewController.m */,
 				188EC8A7206F1F8800A7FB3B /* Assets.xcassets */,
 				188EC8A9206F1F8800A7FB3B /* LaunchScreen.storyboard */,
 				188EC8AC206F1F8800A7FB3B /* Info.plist */,
@@ -134,15 +140,6 @@
 				188EC8C4206F1F8800A7FB3B /* Info.plist */,
 			);
 			path = KachaUITests;
-			sourceTree = "<group>";
-		};
-		188EC8DD206F239500A7FB3B /* MenvView */ = {
-			isa = PBXGroup;
-			children = (
-				188EC8DA206F238300A7FB3B /* MenuView.h */,
-				188EC8DB206F238300A7FB3B /* MenuView.m */,
-			);
-			path = MenvView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,8 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187008D120707E40002D5A72 /* SecondViewController.m in Sources */,
 				188EC8A3206F1F8800A7FB3B /* ViewController.m in Sources */,
-				188EC8DC206F238300A7FB3B /* MenuView.m in Sources */,
+				187008CE20707DED002D5A72 /* LeftMenuViewDemo.m in Sources */,
 				188EC8AE206F1F8800A7FB3B /* main.m in Sources */,
 				188EC8A0206F1F8800A7FB3B /* AppDelegate.m in Sources */,
 			);

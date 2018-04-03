@@ -1,8 +1,8 @@
 //
-//  ViewController.m
+//  LeftMenuViewDemo.m
 //  Kacha
 //
-//  Created by apple on 2018/3/31.
+//  Created by apple on 2018/4/1.
 //  Copyright © 2018年 YuNuo. All rights reserved.
 //
 
@@ -45,10 +45,10 @@
     
     
     width                  = 15;
-    UIImageView *arrow     = [[UIImageView alloc]initWithFrame:CGRectMake(Frame_Width - width - 10, (90 - width)/2, width, width)];
-    arrow.contentMode      = UIViewContentModeScaleAspectFit;
-    [arrow setImage:[UIImage imageNamed:@"person-icon0"]];
-    [headerView addSubview:arrow];
+//    UIImageView *arrow     = [[UIImageView alloc]initWithFrame:CGRectMake(Frame_Width - width - 10, (90 - width)/2, width, width)];
+//    arrow.contentMode      = UIViewContentModeScaleAspectFit;
+//    [arrow setImage:[UIImage imageNamed:@"person-icon0"]];
+//    [headerView addSubview:arrow];
     
     UILabel *NameLabel = [[UILabel alloc]initWithFrame:CGRectMake(12, (90 - width) / 2, width+80, width)];
     [NameLabel setText:@"选择素材"];
