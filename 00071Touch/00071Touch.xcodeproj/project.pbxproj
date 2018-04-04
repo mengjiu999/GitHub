@@ -15,7 +15,7 @@
 		1870092C2073B310002D5A72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1870092B2073B310002D5A72 /* main.m */; };
 		187009362073B310002D5A72 /* _0071TouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187009352073B310002D5A72 /* _0071TouchTests.m */; };
 		187009412073B310002D5A72 /* _0071TouchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 187009402073B310002D5A72 /* _0071TouchUITests.m */; };
-		187009532073B655002D5A72 /* HBUImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 187009522073B655002D5A72 /* HBUImage.m */; };
+		18BCCA2F2073D37A001913FB /* BlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCA2E2073D37A001913FB /* BlueView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		1870093C2073B310002D5A72 /* 00071TouchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 00071TouchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		187009402073B310002D5A72 /* _0071TouchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0071TouchUITests.m; sourceTree = "<group>"; };
 		187009422073B310002D5A72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		187009512073B655002D5A72 /* HBUImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBUImage.h; sourceTree = "<group>"; };
-		187009522073B655002D5A72 /* HBUImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBUImage.m; sourceTree = "<group>"; };
+		18BCCA2D2073D37A001913FB /* BlueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueView.h; sourceTree = "<group>"; };
+		18BCCA2E2073D37A001913FB /* BlueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +84,6 @@
 		187009102073B310002D5A72 = {
 			isa = PBXGroup;
 			children = (
-				187009512073B655002D5A72 /* HBUImage.h */,
-				187009522073B655002D5A72 /* HBUImage.m */,
 				1870091B2073B310002D5A72 /* 00071Touch */,
 				187009342073B310002D5A72 /* 00071TouchTests */,
 				1870093F2073B310002D5A72 /* 00071TouchUITests */,
@@ -110,6 +108,8 @@
 				1870091D2073B310002D5A72 /* AppDelegate.m */,
 				1870091F2073B310002D5A72 /* ViewController.h */,
 				187009202073B310002D5A72 /* ViewController.m */,
+				18BCCA2D2073D37A001913FB /* BlueView.h */,
+				18BCCA2E2073D37A001913FB /* BlueView.m */,
 				187009222073B310002D5A72 /* Main.storyboard */,
 				187009252073B310002D5A72 /* Assets.xcassets */,
 				187009272073B310002D5A72 /* LaunchScreen.storyboard */,
@@ -270,10 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BCCA2F2073D37A001913FB /* BlueView.m in Sources */,
 				187009212073B310002D5A72 /* ViewController.m in Sources */,
 				1870092C2073B310002D5A72 /* main.m in Sources */,
 				1870091E2073B310002D5A72 /* AppDelegate.m in Sources */,
-				187009532073B655002D5A72 /* HBUImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
