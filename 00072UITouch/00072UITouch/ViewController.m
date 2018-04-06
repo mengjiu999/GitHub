@@ -1,15 +1,14 @@
 //
 //  ViewController.m
-//  00071Touch
+//  00072UITouch
 //
-//  Created by apple on 2018/4/3.
+//  Created by apple on 2018/4/5.
 //  Copyright © 2018年 YuNuo. All rights reserved.
 //
 
 #import "ViewController.h"
-
+#import "MyCell.h"
 @interface ViewController ()
-
 
 @end
 
@@ -17,14 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // Do any additional setup after loading the view, typically from a nib.
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MyCell *cell = [MyCell cellWithtableView:tableView];
+    cell.delegate = self;
+    return cell;
+}
 
 
 @end
