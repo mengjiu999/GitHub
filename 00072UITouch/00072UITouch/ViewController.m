@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "MyCell.h"
+#import "BlueView.h"
 @interface ViewController ()
 
 @end
@@ -26,9 +26,7 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MyCell *cell = [MyCell cellWithtableView:tableView];
-    cell.delegate = self;
-    return cell;
+   
 }
 
 

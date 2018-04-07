@@ -16,7 +16,6 @@
 		18BCCA592075E360001913FB /* _0072UITouchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCA582075E360001913FB /* _0072UITouchTests.m */; };
 		18BCCA642075E360001913FB /* _0072UITouchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCA632075E360001913FB /* _0072UITouchUITests.m */; };
 		18BCCA732075E37B001913FB /* BlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCA722075E37B001913FB /* BlueView.m */; };
-		18BCCA7C20770C14001913FB /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCCA7B20770C14001913FB /* MyCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +54,6 @@
 		18BCCA652075E360001913FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BCCA712075E37B001913FB /* BlueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueView.h; sourceTree = "<group>"; };
 		18BCCA722075E37B001913FB /* BlueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueView.m; sourceTree = "<group>"; };
-		18BCCA7A20770C14001913FB /* MyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
-		18BCCA7B20770C14001913FB /* MyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +110,6 @@
 				18BCCA432075E360001913FB /* ViewController.m */,
 				18BCCA712075E37B001913FB /* BlueView.h */,
 				18BCCA722075E37B001913FB /* BlueView.m */,
-				18BCCA7A20770C14001913FB /* MyCell.h */,
-				18BCCA7B20770C14001913FB /* MyCell.m */,
 				18BCCA452075E360001913FB /* Main.storyboard */,
 				18BCCA482075E360001913FB /* Assets.xcassets */,
 				18BCCA4A2075E360001913FB /* LaunchScreen.storyboard */,
@@ -278,7 +273,6 @@
 				18BCCA732075E37B001913FB /* BlueView.m in Sources */,
 				18BCCA442075E360001913FB /* ViewController.m in Sources */,
 				18BCCA4F2075E360001913FB /* main.m in Sources */,
-				18BCCA7C20770C14001913FB /* MyCell.m in Sources */,
 				18BCCA412075E360001913FB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
