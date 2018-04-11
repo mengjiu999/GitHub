@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1831C2DD2078E96C005D2318 /* MoveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1831C2DC2078E96C005D2318 /* MoveView.xib */; };
 		18AAD8AD207876B600B93156 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AAD8AC207876B600B93156 /* AppDelegate.m */; };
 		18AAD8B0207876B600B93156 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AAD8AF207876B600B93156 /* ViewController.m */; };
 		18AAD8B3207876B600B93156 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AAD8B1207876B600B93156 /* Main.storyboard */; };
@@ -16,7 +15,6 @@
 		18AAD8BB207876B600B93156 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AAD8BA207876B600B93156 /* main.m */; };
 		18AAD8C5207876B600B93156 /* _0074UITableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AAD8C4207876B600B93156 /* _0074UITableViewTests.m */; };
 		18AAD8D0207876B600B93156 /* _0074UITableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AAD8CF207876B600B93156 /* _0074UITableViewUITests.m */; };
-		18AAD8E020787A9C00B93156 /* MoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AAD8DF20787A9C00B93156 /* MoveView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1831C2DC2078E96C005D2318 /* MoveView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoveView.xib; sourceTree = "<group>"; };
+		189995BA207E23020038E47E /* MoveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveView.h; sourceTree = "<group>"; };
+		189995BB207E23080038E47E /* MoveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveView.m; sourceTree = "<group>"; };
+		189995BC207E23100038E47E /* MoveView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoveView.xib; sourceTree = "<group>"; };
 		18AAD8A8207876B600B93156 /* 00074UITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 00074UITableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AAD8AB207876B600B93156 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18AAD8AC207876B600B93156 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,8 +54,6 @@
 		18AAD8CB207876B600B93156 /* 00074UITableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 00074UITableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AAD8CF207876B600B93156 /* _0074UITableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0074UITableViewUITests.m; sourceTree = "<group>"; };
 		18AAD8D1207876B600B93156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18AAD8DE20787A9C00B93156 /* MoveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveView.h; sourceTree = "<group>"; };
-		18AAD8DF20787A9C00B93156 /* MoveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +113,7 @@
 				18AAD8B6207876B600B93156 /* LaunchScreen.storyboard */,
 				18AAD8B9207876B600B93156 /* Info.plist */,
 				18AAD8BA207876B600B93156 /* main.m */,
-				18AAD8DD20787A7E00B93156 /* New Group */,
+				18AAD8DD20787A7E00B93156 /* MoveView */,
 			);
 			path = 00074UITableView;
 			sourceTree = "<group>";
@@ -138,14 +136,14 @@
 			path = 00074UITableViewUITests;
 			sourceTree = "<group>";
 		};
-		18AAD8DD20787A7E00B93156 /* New Group */ = {
+		18AAD8DD20787A7E00B93156 /* MoveView */ = {
 			isa = PBXGroup;
 			children = (
-				18AAD8DE20787A9C00B93156 /* MoveView.h */,
-				18AAD8DF20787A9C00B93156 /* MoveView.m */,
-				1831C2DC2078E96C005D2318 /* MoveView.xib */,
+				189995BA207E23020038E47E /* MoveView.h */,
+				189995BB207E23080038E47E /* MoveView.m */,
+				189995BC207E23100038E47E /* MoveView.xib */,
 			);
-			path = "New Group";
+			path = MoveView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +255,6 @@
 				18AAD8B8207876B600B93156 /* LaunchScreen.storyboard in Resources */,
 				18AAD8B5207876B600B93156 /* Assets.xcassets in Resources */,
 				18AAD8B3207876B600B93156 /* Main.storyboard in Resources */,
-				1831C2DD2078E96C005D2318 /* MoveView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +282,6 @@
 				18AAD8B0207876B600B93156 /* ViewController.m in Sources */,
 				18AAD8BB207876B600B93156 /* main.m in Sources */,
 				18AAD8AD207876B600B93156 /* AppDelegate.m in Sources */,
-				18AAD8E020787A9C00B93156 /* MoveView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
