@@ -36,7 +36,7 @@
                                         </constraints>
                                         <state key="normal" title="Button" image="circular"/>
                                         <connections>
-                                            <action selector="ringClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3NS-Hf-G6e"/>
+                                            <action selector="ringClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bIs-nG-Ser"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xo8-6R-qtP">
@@ -47,7 +47,7 @@
                                         </constraints>
                                         <state key="normal" title="Button" image="square"/>
                                         <connections>
-                                            <action selector="squareClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQ7-cd-M4I"/>
+                                            <action selector="squareClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wnv-5N-VVH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IE5-Gc-CPO">
@@ -58,7 +58,7 @@
                                         </constraints>
                                         <state key="normal" title="Button" image="triangle"/>
                                         <connections>
-                                            <action selector="triangleClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Dp-mG-Usl"/>
+                                            <action selector="triangleClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QMl-2H-r3W"/>
                                         </connections>
                                     </button>
                                 </subviews>

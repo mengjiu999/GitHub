@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		189995BA207E23020038E47E /* MoveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveView.h; sourceTree = "<group>"; };
 		189995BB207E23080038E47E /* MoveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveView.m; sourceTree = "<group>"; };
-		189995BC207E23100038E47E /* MoveView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoveView.xib; sourceTree = "<group>"; };
 		18AAD8A8207876B600B93156 /* 00074UITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 00074UITableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AAD8AB207876B600B93156 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18AAD8AC207876B600B93156 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,7 +140,6 @@
 			children = (
 				189995BA207E23020038E47E /* MoveView.h */,
 				189995BB207E23080038E47E /* MoveView.m */,
-				189995BC207E23100038E47E /* MoveView.xib */,
 			);
 			path = MoveView;
 			sourceTree = "<group>";

@@ -1,30 +1,23 @@
 //
 //  MoveView.m
-//  00074UITableView
+//  00078HitTest
 //
-//  Created by apple on 2018/4/7.
+//  Created by apple on 2018/4/13.
 //  Copyright © 2018年 YuNuo. All rights reserved.
 //
 
 #import "MoveView.h"
-@interface MoveView ()
-@property (nonatomic,strong) UIImageView *graphicalImageView;
 
-@end
 @implementation MoveView
 
--(void)setGraphicall:(NSString *)graphicallName{
 
-    self.graphicalImageView.image = [UIImage imageNamed:graphicallName];
-
-    //    self.graphicalImageView.backgroundColor = [UIColor blackColor];
-
-}
--(void)setGraphicallWithFrame:(CGRect)frame{
-    self.graphicalImageView.frame = frame;
-
+-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    UIView *fitView = [super hitTest:point withEvent:event];
+    return fitView;
+   
 }
 -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
     //做UIView拖拽
     UITouch *touch = [touches anyObject];
     NSUInteger toucheNum = [[event allTouches] count];
@@ -37,11 +30,12 @@
         CGPoint prep = [touch previousLocationInView:self];
         CGFloat offsetx = curp.x - prep.x;
         CGFloat offsety = curp.y - prep.y;
-
+        
         //平移
         self.transform = CGAffineTransformTranslate(self.transform, offsetx, offsety);
     }
-
-
 }
+
+    
+    
 @end
