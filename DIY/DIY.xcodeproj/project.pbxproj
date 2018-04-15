@@ -15,7 +15,7 @@
 		18208CA0207F431100D4D4F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18208C9F207F431100D4D4F7 /* main.m */; };
 		18208CAA207F431200D4D4F7 /* DIYTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18208CA9207F431200D4D4F7 /* DIYTests.m */; };
 		18208CB5207F431200D4D4F7 /* DIYUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18208CB4207F431200D4D4F7 /* DIYUITests.m */; };
-		18F55EC5208034C800E90A63 /* MoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F55EC4208034C700E90A63 /* MoveView.m */; };
+		189741FF2080E00A00874892 /* MoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189741FE2080E00A00874892 /* MoveView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +53,8 @@
 		18208CB4207F431200D4D4F7 /* DIYUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIYUITests.m; sourceTree = "<group>"; };
 		18208CB6207F431200D4D4F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189741F62080416000874892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../00074UITableView/00074UITableView/Info.plist; sourceTree = "<group>"; };
-		18F55EC4208034C700E90A63 /* MoveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveView.m; sourceTree = "<group>"; };
-		18F55EC6208034D200E90A63 /* MoveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveView.h; sourceTree = "<group>"; };
+		189741FD2080E00A00874892 /* MoveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveView.h; sourceTree = "<group>"; };
+		189741FE2080E00A00874892 /* MoveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +115,8 @@
 				18208C9E207F431100D4D4F7 /* Info.plist */,
 				189741F62080416000874892 /* Info.plist */,
 				18208C9F207F431100D4D4F7 /* main.m */,
-				18F55EC6208034D200E90A63 /* MoveView.h */,
-				18F55EC4208034C700E90A63 /* MoveView.m */,
+				189741FD2080E00A00874892 /* MoveView.h */,
+				189741FE2080E00A00874892 /* MoveView.m */,
 			);
 			path = DIY;
 			sourceTree = "<group>";
@@ -272,10 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F55EC5208034C800E90A63 /* MoveView.m in Sources */,
 				18208C95207F431100D4D4F7 /* ViewController.m in Sources */,
 				18208CA0207F431100D4D4F7 /* main.m in Sources */,
 				18208C92207F431100D4D4F7 /* AppDelegate.m in Sources */,
+				189741FF2080E00A00874892 /* MoveView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

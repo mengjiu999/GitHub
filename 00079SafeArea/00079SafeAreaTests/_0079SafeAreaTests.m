@@ -1,18 +1,18 @@
 //
-//  TableViewTests.m
-//  TableViewTests
+//  _0079SafeAreaTests.m
+//  00079SafeAreaTests
 //
-//  Created by apple on 2018/4/1.
+//  Created by apple on 2018/4/14.
 //  Copyright © 2018年 YuNuo. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface TableViewTests : XCTestCase
+@interface _0079SafeAreaTests : XCTestCase
 
 @end
 
-@implementation TableViewTests
+@implementation _0079SafeAreaTests
 
 - (void)setUp {
     [super setUp];

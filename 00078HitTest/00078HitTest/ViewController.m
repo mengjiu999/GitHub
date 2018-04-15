@@ -8,40 +8,41 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<BasicViewDelegate>
 @property (weak ,nonatomic) UIView *moveView;
 @property (weak ,nonatomic) UIViewController *viewController;
 @property (weak, nonatomic) UIView *fitView;
 @property (nonatomic) CGPoint touchPoint;
 @property (weak, nonatomic) UIGestureRecognizer *longP;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    MoveView *moveView = [[MoveView alloc] init];
-    moveView.backgroundColor = [UIColor blackColor];
-    moveView.frame = CGRectMake(200, 100, 100, 100);
-    [self.view addSubview:moveView];
     
-    //添加长按手势识别器，longP方法实现图片删除
-    UILongPressGestureRecognizer *longP = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longP)];
-    [moveView addGestureRecognizer:longP];
-    CGPoint fitPoint = [longP locationInView:self.view];
-    self.longP = longP;
-    self.touchPoint = fitPoint;
     
+//    //添加长按手势识别器，longP方法实现图片删除
+//    UILongPressGestureRecognizer *longP = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longP)];
+//    [moveView addGestureRecognizer:longP];
+//    CGPoint fitPoint = [longP locationInView:self.view];
+//    self.longP = longP;
+//    self.touchPoint = fitPoint;
+//
 
-
+    
+}
+-(void)basicViewIsLongPressed:(UIView *)view recognizer:(UIGestureRecognizer *)recognizer{
+    [self promptDeletion:view];
 }
 
 - (IBAction)Click:(id)sender {
-    MoveView *moveView = [[MoveView alloc] init];
-    moveView.backgroundColor = [UIColor blackColor];
-    moveView.frame = CGRectMake(100, 100, 100, 100);
-    [self.view addSubview:moveView];
+    BasicView *basicView = [[BasicView alloc] init];
+    basicView.backgroundColor = [UIColor blackColor];
+    basicView.frame = CGRectMake(200, 100, 100, 100);
+    [self.view addSubview:basicView];
+    basicView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,18 +50,18 @@
     // Dispose of any resources that can be recreated.
 }
 //长按方法
--(void)longP{
-    [self promptDeletion];
+//-(void)longP{
+//    [self promptDeletion];
 
-}
+//}
 
 //提示框
--(void)promptDeletion{
+-(void)promptDeletion:(UIView *)fitView{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"是否删除该图形？" preferredStyle:UIAlertControllerStyleAlert];
     // 是
     _okAction = [UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDefault handler:^(UIAlertAction *_Nonnull action) {
 
-
+        [fitView removeFromSuperview];
 
     }];
     _cancelAction =[UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleCancel handler:nil];
@@ -71,9 +72,9 @@
     // 弹出对话框
     [self presentViewController:alert animated:true completion:nil];
 
-
-
-
 }
+//-(void)viewControllerDidReturn{
+//    [self.delegate viewControllerDidReturnSelf:self :self.view.frame];
+//}
 
 @end

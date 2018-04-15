@@ -8,13 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "MoveView.h"
+#import "BaseView.h"
+@class BasicView;
 @class MoveView;
-@interface ViewController : UIViewController
+@protocol  ViewControllerDelegate <NSObject>
+
+//-(void)viewControllerDidReturnSelf:(UIViewController *)selfController:(CGRect)frame;
+@end
+@interface ViewController : UIViewController 
 
 @property (strong, nonatomic) UIAlertAction *okAction;
 @property (strong, nonatomic) UIAlertAction *cancelAction;
 //代理
-@property (weak, nonatomic) MoveView *delegate;
+@property (nonatomic,strong) id<ViewControllerDelegate> delegate;
 
 @end
 

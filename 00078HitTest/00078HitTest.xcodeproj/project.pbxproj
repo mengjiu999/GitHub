@@ -16,6 +16,7 @@
 		189741DB20803C0700874892 /* _0078HitTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 189741DA20803C0700874892 /* _0078HitTestTests.m */; };
 		189741E620803C0700874892 /* _0078HitTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 189741E520803C0700874892 /* _0078HitTestUITests.m */; };
 		189741F520803C6800874892 /* MoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189741F420803C6800874892 /* MoveView.m */; };
+		189741FC2080D21000874892 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189741FB2080D21000874892 /* BaseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		189741F420803C6800874892 /* MoveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveView.m; sourceTree = "<group>"; };
 		189741F8208041AE00874892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189741F9208041C000874892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189741FA2080D21000874892 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		189741FB2080D21000874892 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				189741D020803C0600874892 /* main.m */,
 				189741F320803C6800874892 /* MoveView.h */,
 				189741F420803C6800874892 /* MoveView.m */,
+				189741FA2080D21000874892 /* BaseView.h */,
+				189741FB2080D21000874892 /* BaseView.m */,
 				189741D920803C0700874892 /* 00078HitTestTests */,
 			);
 			path = 00078HitTest;
@@ -274,6 +279,7 @@
 			files = (
 				189741C620803C0600874892 /* ViewController.m in Sources */,
 				189741D120803C0600874892 /* main.m in Sources */,
+				189741FC2080D21000874892 /* BaseView.m in Sources */,
 				189741C320803C0600874892 /* AppDelegate.m in Sources */,
 				189741F520803C6800874892 /* MoveView.m in Sources */,
 			);

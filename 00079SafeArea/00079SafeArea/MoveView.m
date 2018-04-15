@@ -1,14 +1,16 @@
 //
 //  MoveView.m
-//  00078HitTest
+//  00079SafeArea
 //
-//  Created by apple on 2018/4/13.
+//  Created by apple on 2018/4/14.
 //  Copyright © 2018年 YuNuo. All rights reserved.
 //
 
 #import "MoveView.h"
-
+@interface MoveView () <ViewControllerDelegate>
+@end
 @implementation MoveView
+
 BOOL isMove;
 CGPoint legend_point;
 
@@ -41,7 +43,7 @@ CGPoint legend_point;
 //        if (point.y < V2.frame.size.height / 2.0f) {
 //            point.y = V2.frame.size.height / 2.0f;
 //        }
-//        
+//
 //        if (point.x > self.view.frame.size.width - V2.frame.size.width / 2.0f) {
 //            point.x = self.view.frame.size.width - V2.frame.size.width / 2.0f;
 //        }
@@ -49,40 +51,11 @@ CGPoint legend_point;
 //            point.y = self.view.frame.size.height - V2.frame.size.height / 2.0f;
 //        }
 //        V2.center = point;
-//        
+//
 //    }
 //}
 //
 //
 
-//
-//-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
-//    UIView *fitView = [super hitTest:point withEvent:event];
-//    return fitView;
-//
-//}
-//-(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//
-//    //做UIView拖拽
-//    UITouch *touch = [touches anyObject];
-//    NSUInteger toucheNum = [[event allTouches] count];
-//    if ( toucheNum > 1 ) {
-//        return;//多个手指不执行平移
-//    }
-//    else {
-//
-//            //求偏移量
-//            CGPoint curp = [touch locationInView:self];
-//            CGPoint prep = [touch previousLocationInView:self];
-//            CGFloat offsetx = curp.x - prep.x;
-//            CGFloat offsety = curp.y - prep.y;
-//            //平移
-//            self.transform = CGAffineTransformTranslate(self.transform, offsetx, offsety);
-//
-//
-//            }
-//}
-//
-//
 
 @end

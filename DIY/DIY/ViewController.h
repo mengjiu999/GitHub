@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "MoveView.h"
+
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) UIAlertAction *okAction;
 @property (strong, nonatomic) UIAlertAction *cancelAction;
+
 @end
 
